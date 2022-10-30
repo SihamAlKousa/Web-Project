@@ -1,0 +1,106 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+	<nav> 
+		<h4>website name</h4>
+		<ul>
+			<li><a href="#Movies">Movies</a></li>
+			<li><a href="#TvShows">Tv Shows</a></li>
+			<li><a href="#News">News</a></li>
+			<li><a href="#Contact Us">Contact Us</a></li>
+		</ul>
+		<form id="form"> 
+  		<input type="search" id="query" name="q" placeholder="Search...">
+ 		<button>Search</button>
+		</form>
+	</nav>
+	<section>
+	<h1>Movie news</h1>
+		<p>The latest movie news on the movies you're most interested in seeing.</p>
+		<hr>
+		<p>LATEST</p>
+		<br>
+		<h3>Werewolf by Night Has MCU's 4th Highest Rotten Tomatoes Audience Score</h3>
+		<p>Published On </p>
+		<div id="current_date">
+			<script>
+			date = new Date();
+			year = date.getFullYear();
+			month = date.getMonth() + 1;
+			day = date.getDate();
+			
+			document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+			</script>
+		</div>
+		<img src="images/werewolf.jpeg" alt="Werewolf By Night">
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+			 sed do eiusmod tempor incididunt ut labore et dolore magna 
+			 aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
+			 ullamco laboris nisi ut aliquip ex ea commodo consequat.
+			Duis aute irure dolor in reprehenderit in voluptate velit
+			esse cillum dolore eu fugiat nulla pariatur. 
+			Excepteur sint occaecat cupidatat non proident, 
+			sunt in culpa qui officia deserunt mollit anim id
+			est laborum.
+		</p>
+		<hr>
+		<h3>The Simpsons Broke Its Own Rules (To Mock The Show’s Decline)</h3>
+		<img src="images/simp.jpeg" width="300px" >
+		<p>The Simpsons broke the show's own anthology format in
+			season 34, but this risky choice allowed the cartoon
+			comedy to mock its own critical failures.</p>
+		<hr>
+		<h3>Seinfeld: 10 Endings Better Than The Finale, According To Reddit</h3>
+		<img src="images/seinfeld.jpeg" width="300px" >
+		<p>The Seinfeld series finale isn't a favorite among fans, and Redditors are sharing the ways they would have concluded the sitcom instead.</p>
+		<hr>
+		<h3>Rick & Morty Shows How A Kind Sci-fi Alien Earth Takeover Would Be Worse
+		</h3>
+		<img src="images/ricky.jpeg" width="300px" >
+		<p>Rick & Morty season 6 showed that a takeover of Earth by well-intentioned
+			 extraterrestrials could be just as bad as a typical evil-alien invasion.
+		</p>
+		<hr>
+		</section>
+		<br>
+		<br>
+
+		<form action="/action_page.php">
+			<div class="container">
+			  <h3>Subscribe to our Newsletter</h3>
+			  <p>Lorem ipsum text about why you should subscribe to our newsletter blabla. Lorem ipsum text about why you should subscribe to our newsletter blabla.</p>
+			</div>
+		  
+			<div class="container" style="background-color:white">
+			  <input type="text" placeholder="Name" name="name" required>
+			  <input type="text" placeholder="Email address" name="mail" required>
+			  <label>
+				<input type="checkbox" checked="checked" name="subscribe"> Daily Newsletter
+			  </label>
+			</div>
+		  
+			<div class="container">
+			  <input type="submit" value="Subscribe">
+			</div>
+		  </form>
+		  <br>
+		  <br>
+<hr>
+		<footer>
+			<p>Home > Movies</p>
+			<p>facebook</p>
+			<p>Twitter</p>
+			<p>Linkedin</p>
+
+			Copyright @ 2022 websitename.com
+
+
+		</footer>
+</body>
+</html>
