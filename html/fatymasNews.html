@@ -1,0 +1,43 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+	<nav> 
+		<h4>website name</h4>
+		<ul>
+			<li><a href="#Movies">Movies</a></li>
+			<li><a href="#TvShows">Tv Shows</a></li>
+			<li><a href="#News">News</a></li>
+			<li><a href="#Contact Us">Contact Us</a></li>
+		</ul>
+		<form id="form"> 
+  		<input type="search" id="query" name="q" placeholder="Search...">
+ 		<button>Search</button>
+		</form>
+	</nav>
+	<section>
+	<h1>Movie news</h1>
+		<p>The latest movie news on the movies you're most interested in seeing.</p>
+		<hr>
+		<p>LATEST</p>
+		<br>
+		<p>Werewolf by Night Has MCU's 4th Highest Rotten Tomatoes Audience Score</p>
+		<div id="current_date">
+			<script>
+			date = new Date();
+			year = date.getFullYear();
+			month = date.getMonth() + 1;
+			day = date.getDate();
+			document.writeln("<h3>Updated at </h3>");
+			document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
+			</script>
+		</div>
+		<img src="desk.jpg" alt="matcha" width="20pt" height="50pt">
+	</section>
+</body>
+</html>
