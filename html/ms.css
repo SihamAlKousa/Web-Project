@@ -103,6 +103,7 @@ body{
     transition: 0.2s all linear;
 }
 .box h3{
+    padding-top:10px;
     font-size: 0.9rem;
     font-weight: 500;
 }
