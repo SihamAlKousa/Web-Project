@@ -3,8 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
-    <!-- <link href="/css/homeStyle.css" rel="stylesheet" type="text/css"> -->
-     <!--<style>
+    <style>
         * {
     padding: 0;
     margin: 0;
@@ -42,11 +41,7 @@ h1, h2, h3 {
 
 
 /* ----------------------- NAV -------------------------------*/
-.nav-logo {
-    position: absolute;
-    top: 2.25rem;
-    right: -5rem;
-}
+
 
 nav {
     background-color: lightgray;
@@ -61,19 +56,23 @@ nav {
 nav ul {
     position: absolute;
     top: 2.25rem;
-    right: 2rem;
+    right: 4rem;
     display: flex;
     align-items: center;
 }
 
 nav ul li a {
-    padding: 2rem;
+    padding: 3rem;
 }
-
 
 nav ul li a:hover {
     color: black;
-    
+}
+
+.nav-logo {
+    position: absolute;
+    top: 2.25rem;
+    left: 6.5rem;
 }
 
 #sub-ul {
@@ -86,20 +85,16 @@ nav ul li a:hover {
     opacity: 0;
 }
 
-#sub-ul li {
-    width: 100%;
-    text-align: center;
-}
-
 #sub-ul li a {
     display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
 }
 
 nav ul li:hover a + #sub-ul {
     visibility: visible;
-    opacity: 1; 
+    opacity: 1;
 }
-
 
 /* ----------------------- IMG SLIDER -------------------------------*/
 .img-container {
@@ -139,41 +134,36 @@ nav ul li:hover a + #sub-ul {
 /* ----------------------- RECOMMENDATION -------------------------------*/
 .top-movies {
     position: relative;
-    margin-bottom: 5.5rem;
+    overflow: hidden;
+    padding: 1rem 0;
 }
 
 .top-movies h2 {
     margin-left: 5.5rem;
 }
 
-.top-movies .btnNext, .top-movies .btnBack {
-    position: absolute;
-    width: 5.5rem;
-    height: 24rem;
-    opacity: 0.4;
-    transition: all 250ms ease;
-}
-
-.top-movies .btnNext {
-    right: 0;
-}
-
-.top-movies .btnNext:hover, .top-movies .btnBack:hover {
-    opacity: 1;
-}
 
 .movie-container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
-    margin-left: 1.5rem;
+    justify-items: center; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 5rem;
+}
+
+.movie-container::-webkit-scrollbar {
+    display: none;
 }
 
 .movie-info {
-    display: block;
-    width: 16rem;
-    height: 24rem;
+    flex: 0 0 auto;
+    width: 20rem;
+    height: 26rem;
     background-color: lightgray;
+    margin-right: 5rem;
 }
 
 .movie-info h4 {
@@ -193,6 +183,23 @@ nav ul li:hover a + #sub-ul {
 
 .add-watchlist:hover {
     background-color: gray;
+}
+
+.top-movies .btnNext, .top-movies .btnBack {
+    position: absolute;
+    width: 5.5rem;
+    height: 26rem;
+    opacity: 0.4;
+    transition: all 250ms ease;
+}
+
+.top-movies .btnNext {
+    right: 0;
+}
+
+.top-movies .btnNext:hover, .top-movies .btnBack:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* ----------------------- REVIEWS -------------------------------*/
@@ -259,15 +266,16 @@ footer {
 .footer-copyright {
     font-size: small;
 }
+    </style>
 
-    </style> -->
 </head>
 <body>
-
-    <!----------------------- NAV -------------------------------->
-    <div class="block">
+    
         <nav>
-            <img class ="nav-logo" src="" alt="logo">
+            <div class="nav-logo">
+                <img src="" alt="logo">
+            </div>
+            
             <ul>
                 <li><a href="#">Top Rating</a>
                     <ul id="sub-ul">
@@ -275,125 +283,146 @@ footer {
                         <li><a href="#">TV Shows</a></li>
                     </ul>
                 </li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">News</a></li>
                 <li><a href="#">Surprise Me</a></li>
                 <li><a href="#">Watchlist</a></li>
             </ul>
         </nav>
-    </div>
-        
     
-        <!----------------------- IMG SLIDER -------------------------------->
-    <div class="block img-container">
+
+    <div class="img-container">
         <div class="img-slider">
             <button class="btnNext">Next</button>
             <button class="btnBack">Back</button>
-            <img src="images/mysticRiver.jpeg" alt="Movie poster" style="width: 100%;">
+            <!--<img src="" alt="Movie poster">-->
         </div>
     </div>
-
-
-
-   
-    <section class="block about-us">
+    
+    <section class="about-us">
         <h1>About Us</h1>
         <p>Our website is a movie and TV show library for fans or curious visitors to dive in and explore all about their favourite shows.
             We aim to provide best quality service together with solid content that will satisfy all visitors.
         </p>
     </section>
 
-
-        <!----------------------- RECOMMENDATION -------------------------------->    
-
-    <div class="block top-movies">
-
+    <div class="top-movies">
         <h2>Top Movies</h2>
-        <button class="btnNext">Next</button>
-        <button class="btnBack">Back</button>
+
+        <button class="btnNext" type="button">Next</button>
+        <button class="btnBack" type="button">Back</button>
 
         <div class="movie-container">
+            
+
             <div class="movie-info">
                 <h4>Movie Title</h4>
                 <div class="img-thumbnail">
-                    <img src="images/inception.jpeg" alt="movie name"> 
-                 </div>
-                <button class="add-watchlist">+ Watchlist</button>
-            </div>
-            <div class="movie-info">
-                <h4>Movie Title</h4>
-                <div class="img-thumbnail">
-                    <img src="" alt="movie name"> 
-                 </div>
-                <button class="add-watchlist">+ Watchlist</button>
-            </div>
-            <div class="movie-info">
-                <h4>Movie Title</h4>
-                <div class="img-thumbnail">
-                   <img src="" alt="movie name"> 
+                    <img src="" alt="movie name">
                 </div>
                 <button class="add-watchlist">+ Watchlist</button>
             </div>
 
+            <div class="movie-info">
+                <h4>Movie Title</h4>
+                <div class="img-thumbnail">
+                    <img src="" alt="movie name">
+                </div>
+                <button class="add-watchlist">+ Watchlist</button>
+            </div>
+
+            <div class="movie-info">
+                <h4>Movie Title</h4>
+                <div class="img-thumbnail">
+                    <img src="" alt="movie name">
+                </div>
+                <button class="add-watchlist">+ Watchlist</button>
+            </div>
+
+            <div class="movie-info">
+                <h4>Movie Title</h4>
+                <div class="img-thumbnail">
+                    <img src="" alt="movie name">
+                </div>
+                <button class="add-watchlist">+ Watchlist</button>
+            </div>
+
+            <div class="movie-info">
+                <h4>Movie Title</h4>
+                <div class="img-thumbnail">
+                    <img src="" alt="movie name">
+                </div>
+                <button class="add-watchlist">+ Watchlist</button>
+            </div>
+
+            <div class="movie-info">
+                <h4>Movie Title</h4>
+                <div class="img-thumbnail">
+                    <img src="" alt="movie name">
+                </div>
+                <button class="add-watchlist">+ Watchlist</button>
+            </div>
+
+
         </div>
     </div>
+
     
-
-
-        <!----------------------- REVIEWS -------------------------------->    
-
-    <div class="block reviews">
+    <div class="reviews">
         <h2>Community Reviews</h2>
-        <div class="review-container">
-            <div class="review-block">
+            <div class="review-container">
+                <div class="review-block">
                 <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ornare quam viverra orci sagittis eu.</blockquote>
                 <p class="reviewer">Reviewer name 1</p>
             </div>
+
             <div class="review-block">
                 <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ornare quam viverra orci sagittis eu.</blockquote>
                 <p class="reviewer">Reviewer name 2</p>
             </div>
+
             <div class="review-block">
                 <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ornare quam viverra orci sagittis eu.</blockquote>
                 <p class="reviewer">Reviewer name 3</p>
             </div>
+
             <div class="review-block">
                 <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     Ornare quam viverra orci sagittis eu.</blockquote>
                 <p class="reviewer">Reviewer name 4</p>
-            </div>   
+            </div>
         </div>
         
     </div>
 
-
-        <!-----------------------FOOTER -------------------------------->    
-
-    <footer class="block">
+    <footer>
         <div class="footer-logo">
             <img src="" alt="website logo">
         </div>
         
+        
         <div class="footer-media">
-            <i class="social-media">Youtube</i>
-            <i class="social-media">Instagram</i>
-            <i class="social-media">Facebook</i>
-            <i class="social-media">Telegram</i>
-            <i class="social-media">Twitter</i> 
+            <i>Youtube</i>
+            <i>Instagram</i>
+            <i>Facebook</i>
+            <i>Telegram</i>
+            <i>Twitter</i> 
         </div>
+
         
         <div class="footer-links">
             <h3>Navigate</h3>
-            <ul>
-                <li><a href="#">Top-Rated Movies</a></li>
-                <li><a href="#">Top-Rated TV Shows</a></li>
-                <li><a href="#">NEWS</a></li>
-                <li><a href="#">Surprise Me</a></li>
-                <li><a href="#">Contact Us</a></li>
-            </ul> 
+           <ul>
+            <li><a href="#">Top-Rated Movies</a></li>
+            <li><a href="#">Top-Rated TV Shows</a></li>
+            <li><a href="#">NEWS</a></li>
+            <li><a href="#">Surprise Me</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul> 
         </div>
+        
         <div class="footer-copyright">
             <p><span>&copy;</span>Website project 2022. Movie rating website</p>
         </div>
