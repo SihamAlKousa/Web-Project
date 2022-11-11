@@ -29,6 +29,7 @@ body {
     margin: 20px auto;
     padding: 20px;
 }
+/* Navigation */
 nav {
     background-color: lightgray;
     width: 100%;
@@ -38,7 +39,6 @@ nav {
     z-index: 10;
     margin-bottom: 10%;
 }
-
 
 nav ul {
     position: absolute;
@@ -82,6 +82,8 @@ nav ul li:hover a + #sub-ul {
     visibility: visible;
     opacity: 1;
 }
+
+/*poster*/
 .poster {
     text-align: center;
     float: left;
@@ -92,6 +94,7 @@ img {
     border-radius: 2%;
 }
 
+/*movie title and its description*/
 .title {
     color: black;
     font-size: 24px;
@@ -111,9 +114,6 @@ img {
     float: left;
    
 }
-.wtw {
-    position: relative;
-    
-}
+
 
 
