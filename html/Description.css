@@ -90,6 +90,11 @@ nav ul li:hover a + #sub-ul {
     margin-left: 20px;
     margin-right: 50px;
 }
+.poster ul li{
+    float: left;
+    margin-right: 13.5px;
+    margin-left: 13.5px;
+}
 figure{
     overflow: hidden;
 }
