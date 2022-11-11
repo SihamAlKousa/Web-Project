@@ -137,7 +137,7 @@ img {
 }
 
 
-/*movie title and its description*/
+/*movie&tvshow title and its description*/
 .title {
     color: black;
     font-size: 24px;
@@ -157,6 +157,7 @@ img {
     float: left;
    
 }
+/*movie&tvshow info----might need adjustment for movies*/
 .des2 {
     border-radius: 25px;
     border: 2px solid black;
@@ -185,9 +186,33 @@ img {
     padding: 3px 6px;
     white-space: nowrap;
 }
+/*ratings*/
 .ratings{
     margin: 20px;
+    display: grid;
+    float: left;
 }
+.rate-site{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 5px;
+}
+.block-rate{
+    text-align: left;
+}
+.rating{
+    border: 2px solid #283038;
+    border-radius: 2px;
+    color: #9ab;
+    font-size: 0.855rem;
+    letter-spacing: .075em;
+    padding: 4px 5px 3px;
+    text-transform: uppercase;
+}
+.reating:hover{
+    text-decoration: underline;
+}
+.rating:visited{color: rgb(75, 11, 64);}
 
 
 
