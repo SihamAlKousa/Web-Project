@@ -13,24 +13,24 @@ body{
     min-height: 100vh;
     background: #1f2833; /*need to change*/
 }
-.wrapper{
+.container{
     width: 720px;
     background:#c0c8d1;
     border-radius:8px;
 }
-.wrapper header{
+.container header{
     font-size:15px;
-    font-weight: bold;
+    
     padding:0 30px 10px 40px;
     border-bottom:2px solid black;
 }
-.wrapper h3{
+.container h3{
     font-size:30px;
     font-weight: 1000px;
     padding:5px 10px;
    
 }
-.wrapper form{
+.container form{
     margin:30px 30px;
 }
 form .dbl-field{
@@ -65,7 +65,7 @@ form .message textarea:focus{
     border: 2px solid ;
     
 }
-.wrapper form i{
+.container form i{
     position:absolute;
     left:23px;
     top:50%;
@@ -87,7 +87,9 @@ form .message i{
     top:30px;
     font-size:22px;
 }
-
+datalist{
+    display:none;
+}
 form .message textarea{
     min-width: 100%;
     max-width: 100%;
@@ -95,19 +97,86 @@ form .message textarea{
     max-height: 300px;;
     padding: 15px 20px 0 48px;
 }
-form .button-area{
-    margin:25px 0;
-    display:flex;
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div {
+
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex-container button:focus {
+    border: 2px solid;
+}
+
+.flex-container span {
+    color: black;
+    margin-left: 30px;
+}
+
+span {
+    /*when the submit button is active*/
+    display: none;
+    margin:30px 20px 20px 30px;
+    
+}
+
+form .flex-container button:active+span {
+    /*when the submit button is active*/
+    display: flex;
+    top:180px;
+    font-size: small;
+}
+
+form .flex-container button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+form .flex-container {
+    margin: 25px 0;
+    display: flex;
     align-items: center;
 }
-.button-area button{
+
+.flex-container button {
     border-radius: 5px;
-    padding:15px 20px 20px 0;
-    font-size:16px;
-    border:none;
-    cursor:pointer;
-    align-items: center;
+    padding: 15px 15px 20px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
 }
-.button-area button:focus{
-    border: 2px solid ;
+
+
+@media(max-width:600px){
+    .container header{
+        text-align: center;
+    }
+    form .dbl-field{
+        flex-direction:column;
+        margin-bottom: 0px;
+    }
+    .dbl-field .field{
+        width: 100%;
+        margin-bottom:20px;
+    }
+    form .message textarea{
+        resize:both;
+    }
+    form .flex-container{
+        flex-direction:column;
+    }
+    .flex-container button{
+        width: 100px;
+    }
+    
 }
+  
+
+
+
