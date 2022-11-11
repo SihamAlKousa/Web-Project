@@ -269,4 +269,11 @@ footer {
 .fa-brands {
     font-size: 24px;
 }
-
+.conbody{
+    font-size: 1.307rem;
+    line-height: 1.52;;
+}
+.contacttext{
+    flex: 1 1 auto;
+    padding-left: 50px;
+}
