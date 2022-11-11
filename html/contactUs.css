@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+*{
+    margin:0;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:"Poppins", sans-serif;
+}
+body{
+    display:flex;
+    padding:0 10px;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: #1f2833; /*need to change*/
+}
+.container{
+    width: 720px;
+    background:#c0c8d1;
+    border-radius:8px;
+}
+.container header{
+    font-size:15px;
+    
+    padding:0 30px 10px 40px;
+    border-bottom:2px solid black;
+}
+.container h3{
+    font-size:30px;
+    font-weight: 1000px;
+    padding:5px 10px;
+   
+}
+.container form{
+    margin:30px 30px;
+}
+form .dbl-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom:20px;
+}
+.dbl-field .field{
+    height:50px;
+    width: calc(100%2-13px);
+    position:relative;
+}
+form .field input,
+form .message textarea{
+    height:100%;
+    width:100%;
+    outline:none;
+    overflow:scroll;
+    padding:0 18px 0 48px;
+    border:1px solid white;
+    border-radius: 10px;;
+    font-size:16px;
+    font-size: 17px;;
+}
+/*form .field input::placeholder,
+form .message textarea::placeholder{
+    
+}*/
+form .field input:focus, /* when user inputs thebox will be focused*/
+form .message textarea:focus{
+    border: 2px solid ;
+    
+}
+.container form i{
+    position:absolute;
+    left:23px;
+    top:50%;
+    transform: translateY(-50%);
+    font-size: 17px;
+    pointer-events: none;
+    color:#bfbfbf;
+    
+}
+form .field input:focus ~ i,
+form .message textarea:focus ~ i{
+    color:#3b3b3b;
+    
+}
+form .message{
+    position:relative;
+}
+form .message i{
+    top:30px;
+    font-size:22px;
+}
+datalist{
+    display:none;
+}
+form .message textarea{
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;;
+    padding: 15px 20px 0 48px;
+}
+
+
+.flex-container {
+    display: flex;
+}
+
+.flex-container>div {
+
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex-container button:focus {
+    border: 2px solid;
+}
+
+.flex-container span {
+    color: black;
+    margin-left: 30px;
+}
+
+span {
+    /*when the submit button is active*/
+    display: none;
+    margin:30px 20px 20px 30px;
+    
+}
+
+form .flex-container button:active+span {
+    /*when the submit button is active*/
+    display: flex;
+    top:180px;
+    font-size: small;
+}
+
+form .flex-container button:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+form .flex-container {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.flex-container button {
+    border-radius: 5px;
+    padding: 15px 15px 20px 20px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+
+@media(max-width:600px){
+    .container header{
+        text-align: center;
+    }
+    form .dbl-field{
+        flex-direction:column;
+        margin-bottom: 0px;
+    }
+    .dbl-field .field{
+        width: 100%;
+        margin-bottom:20px;
+    }
+    form .message textarea{
+        resize:both;
+    }
+    form .flex-container{
+        flex-direction:column;
+    }
+    .flex-container button{
+        width: 100px;
+    }
+    
+}
+  
+
+
+
