@@ -92,6 +92,7 @@ nav ul li:hover a + #sub-ul {
     float: left;
     margin-left: 20px;
     margin-right: 50px;
+    
 }
 .poster ul li{
     float: left;
@@ -141,88 +142,7 @@ figure{
 }
 
 
-/*movie&tvshow title and its description*/
-.title {
-    color: black;
-    font-size: 24px;
-    margin: 0 0 12px;
-    
-}
-.des {
-    border-radius: 25px;
-    border: 2px solid black;
-    padding: 33px;
-    margin-top: 10px;
-    margin-left: -20px;
-    margin-right: 20px;
-    width: 500px;
-    height: 300px;
-    display: block;
-    float: left;
-   
-}
-/*movie&tvshow info----might need adjustment for movies*/
-.des2 {
-    border-radius: 25px;
-    border: 2px solid black;
-    padding: 20px;
-    margin-top: -61px;
-    margin-left: 10px;
-    margin-right: 20px;
-    width: 20%;
-    height: 371px;
-    display: block;
-    float: left;
-   
-}
-.des2 ul li p{
-    box-sizing: border-box;
-    margin-bottom: 1px;
-    margin-right: 1px;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background: #283038;
-    border-radius: 3px;
-    box-shadow: inset 0 1px transparent;
-    color: #9ab;
-    display: inline-block;
-    padding: 3px 6px;
-    white-space: nowrap;
-}
-/*ratings*/
-.ratings{
-    margin: 20px;
-    display: grid;
-    float: left;
-}
-.rate-site{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 5px;
-}
-.block-rate{
-    text-align: left;
-}
-.rating{
 
-    color: #9ab;
-    font-size: 0.855rem;
-    letter-spacing: .075em;
-    padding: 4px 5px 3px;
-    text-transform: uppercase;
-}
-.reating:hover{
-    text-decoration: underline;
-}
-.rating:visited{color: rgb(75, 11, 64);}
-/*trailer*/
-.trailer{
-    width: 100px;
-    height: 100px;
-    float: left;
-    margin: 20px;
-}
 /*footer*/
 footer {
     position: relative;
@@ -268,4 +188,37 @@ footer {
 
 .fa-brands {
     font-size: 24px;
+}
+.conbody{
+    font-size: 1.307rem;
+    line-height: 1.52;;
+    margin-left: 250px;
+}
+.contacttext{
+    flex: 1 1 auto;
+    padding-left: 50px;
+}
+.title{
+    font-size: 3.076rem;
+    line-height: 1;
+    text-align: left;
+}
+.conbody p{
+    margin-bottom: 0.705em;
+    font-size: inherit;
+}
+.button{
+    appearance: none;
+    background: #fff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 1mm;
+    line-height: 12px;
+    margin: 0;
+    padding: 9px 12px 8px;
+    text-transform: uppercase;
 }
