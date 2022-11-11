@@ -98,64 +98,6 @@ form .message textarea{
     padding: 15px 20px 0 48px;
 }
 
-/* 
-form .button-area{
-   margin:25px 0;
-    display:flex;
-    align-items: center;
-}
-.button-area button{
-    border-radius: 5px;
-    padding:15px 15px 20px 20px;
-    font-size:16px;
-    border:none;
-    cursor:pointer;
-    align-items: center;
-}
-----------------Rest button---------------------
-form .reset {
-    margin:25px 0;
-    display:flex;
-    align-items: center;
-    inset-inline: 200px;
-}
-form .reset button{
-    border-radius: 5px;
-    padding:15px 15px 20px 20px;
-    font-size:16px;
-    border:none;
-    cursor:pointer;
-    align-items: center;
-}
-.reset button:focus{
-    border: 2px solid ;
-}
-form .reset button:active{
-    
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-----------------Submit button--------------------
-.button-area button:focus{
-    border: 2px solid ;
-}
-.button-area span{
-    color:black;
-    margin-left:30px;
-}
-span{ when the submit button is active
-    display:none;
-}
-form .button-area button:active+ span{ when the submit button is active
-    display:block;
-}
-form .button-area button:active{
-    
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
-*/
-
 
 .flex-container {
     display: flex;
