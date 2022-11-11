@@ -19,9 +19,9 @@ body{
     border-radius:8px;
 }
 .wrapper header{
-    font-size:20px;
+    font-size:15px;
     font-weight: bold;
-    padding:10px 30px;
+    padding:0 30px 10px 40px;
     border-bottom:2px solid black;
 }
 .wrapper h3{
@@ -82,6 +82,7 @@ form .message i{
 form .message textarea{
     min-width: 100%;
     max-width: 100%;
-    min-height: 120px;
+    min-height: 100px;
+    max-height: 300px;;
     padding: 15px 20px 0 48px;
 }
