@@ -92,6 +92,8 @@ nav ul li:hover a + #sub-ul {
 }
 img {
     border-radius: 2%;
+    width: 230px;
+    height: 345px;
 }
 
 /*movie title and its description*/
