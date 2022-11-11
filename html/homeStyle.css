@@ -17,7 +17,7 @@ body {
 }
 
 .block {
-    margin: 2rem auto;
+    margin: 0 auto;
     width: auto;
 }
 
@@ -44,6 +44,7 @@ nav {
     position: relative;
     top: 0;
     z-index: 10;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
 }
 
 
@@ -57,10 +58,11 @@ nav ul {
 
 nav ul li a {
     padding: 3rem;
+    color: black;
 }
 
 nav ul li a:hover {
-    color: black;
+    color: gray;
 }
 
 .nav-logo {
@@ -73,7 +75,7 @@ nav ul li a:hover {
     top: 3.25rem;
     right: auto;
     flex-direction: column;
-    background-color: rgb(143, 143, 143);
+    background-color: lightgray;
     visibility: hidden;
     transition: all 250ms ease;
     opacity: 0;
@@ -93,7 +95,10 @@ nav ul li:hover a + #sub-ul {
 /* ----------------------- IMG SLIDER -------------------------------*/
 .img-container {
     position: relative;
+    z-index: 9;
     height: 25rem;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+    background-color: gray;
 }
 
 .img-slider {
@@ -118,23 +123,36 @@ nav ul li:hover a + #sub-ul {
 
 /* ----------------------- ABOUT US -------------------------------*/
 .about-us {
-    margin: 5.5rem;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+    position: relative;
+    z-index: 8;
+}
+.about-us-container {
+    padding: 10rem 12rem;
+    background-color: gray;
+    
 }
 
 .about-us p {
     text-align: justify;
+
 }
 
 /* ----------------------- RECOMMENDATION -------------------------------*/
 .top-movies {
     position: relative;
+    z-index: 7;
     overflow: hidden;
-    padding: 1rem 0;
-    margin-bottom: 5.5rem;
+    padding: 8rem 0 5rem 0;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+    background-color: gray;
 }
 
 .top-movies h2 {
     margin-left: 5.5rem;
+    
 }
 
 
@@ -147,6 +165,7 @@ nav ul li:hover a + #sub-ul {
     overflow-x: auto;
     scroll-behavior: smooth;
     padding: 0 5rem;
+    
 }
 
 .movie-container::-webkit-scrollbar {
@@ -199,7 +218,10 @@ nav ul li:hover a + #sub-ul {
 
 /* ----------------------- REVIEWS -------------------------------*/
 .reviews {
-    margin-bottom: 5.5rem;
+    padding: 8rem 5rem;
+    position: relatvie;
+    z-index: 6;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
 }
 
 .reviews h2 {
@@ -226,6 +248,9 @@ nav ul li:hover a + #sub-ul {
 
 /* ----------------------- FOOTER -------------------------------*/
 footer {
+    position: relative;
+    z-index: 5;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
     display: grid;
     justify-content: center;
     background-color: lightgray;
@@ -260,4 +285,8 @@ footer {
 
 .footer-copyright {
     font-size: small;
+}
+
+.fa-brands {
+    font-size: 24px;
 }
