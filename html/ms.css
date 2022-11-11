@@ -14,6 +14,30 @@
 
 /* ----------------------- NAV -------------------------------*/
 
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    appearance: 0;
+}
+
+body {
+    background-color: gray;
+    font-family: sans-serif;
+    overflow-x: hidden;
+    line-height: 1.5rem;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
 nav {
     background-color: lightgray;
@@ -22,6 +46,7 @@ nav {
     position: relative;
     top: 0;
     z-index: 10;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
 }
 
 
@@ -35,10 +60,11 @@ nav ul {
 
 nav ul li a {
     padding: 3rem;
+    color: black;
 }
 
 nav ul li a:hover {
-    color: black;
+    color: gray;
 }
 
 .nav-logo {
@@ -51,7 +77,7 @@ nav ul li a:hover {
     top: 3.25rem;
     right: auto;
     flex-direction: column;
-    background-color: rgb(143, 143, 143);
+    background-color: lightgray;
     visibility: hidden;
     transition: all 250ms ease;
     opacity: 0;
@@ -67,6 +93,8 @@ nav ul li:hover a + #sub-ul {
     visibility: visible;
     opacity: 1;
 }
+
+
 
 /* ----------------------- NAVEND -------------------------------*/
 
@@ -104,7 +132,6 @@ body{
     transition: 0.2s all linear;
 }
 .box h3{
-    padding-top:10px;
     font-size: 0.9rem;
     font-weight: 500;
 }
