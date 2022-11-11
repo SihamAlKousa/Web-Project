@@ -1,121 +1,100 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
-* {
-    margin: 0;
-    padding: 0px;
+*{
+    margin:0;
+    padding:0px;
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family:"Poppins", sans-serif;
 }
-
-body {
-    display: flex;
-    padding: 0 10px;
+body{
+    display:flex;
+    padding:0 10px;
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #1f2833;
-    /*need to change*/
+    background: #1f2833; /*need to change*/
 }
-
-.container {
+.container{
     width: 720px;
-    background: #c0c8d1;
-    border-radius: 8px;
+    background:#c0c8d1;
+    border-radius:8px;
 }
-
-.container header {
-    font-size: 15px;
-
-    padding: 0 30px 10px 40px;
-    border-bottom: 2px solid black;
+.container header{
+    font-size:15px;
+    
+    padding:0 30px 10px 40px;
+    border-bottom:2px solid black;
 }
-
-.container h3 {
-    font-size: 30px;
+.container h3{
+    font-size:30px;
     font-weight: 1000px;
-    padding: 5px 10px;
-
+    padding:5px 10px;
+   
 }
-
-.container form {
-    margin: 30px 30px;
+.container form{
+    margin:30px 30px;
 }
-
-form .dbl-field {
+form .dbl-field{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom:20px;
 }
-
-.dbl-field .field {
-    height: 50px;
+.dbl-field .field{
+    height:50px;
     width: calc(100%2-13px);
-    position: relative;
+    position:relative;
 }
-
 form .field input,
-form .message textarea {
-    height: 100%;
-    width: 100%;
-    outline: none;
-    overflow: scroll;
-    padding: 0 18px 0 48px;
-    border: 1px solid white;
-    border-radius: 10px;
-    ;
-    font-size: 16px;
-    font-size: 17px;
-    ;
+form .message textarea{
+    height:100%;
+    width:100%;
+    outline:none;
+    overflow:scroll;
+    padding:0 18px 0 48px;
+    border:1px solid white;
+    border-radius: 10px;;
+    font-size:16px;
+    font-size: 17px;;
 }
-
 /*form .field input::placeholder,
 form .message textarea::placeholder{
     
 }*/
-form .field input:focus,
-/* when user inputs thebox will be focused*/
-form .message textarea:focus {
-    border: 2px solid;
-
+form .field input:focus, /* when user inputs thebox will be focused*/
+form .message textarea:focus{
+    border: 2px solid ;
+    
 }
-
-.container form i {
-    position: absolute;
-    left: 23px;
-    top: 50%;
+.container form i{
+    position:absolute;
+    left:23px;
+    top:50%;
     transform: translateY(-50%);
     font-size: 17px;
     pointer-events: none;
-    color: #bfbfbf;
-
+    color:#bfbfbf;
+    
 }
-
-form .field input:focus~i,
-form .message textarea:focus~i {
-    color: #3b3b3b;
-
+form .field input:focus ~ i,
+form .message textarea:focus ~ i{
+    color:#3b3b3b;
+    
 }
-
-form .message {
-    position: relative;
+form .message{
+    position:relative;
 }
-
-form .message i {
-    top: 30px;
-    font-size: 22px;
+form .message i{
+    top:30px;
+    font-size:22px;
 }
-
-datalist {
-    display: none;
+datalist{
+    display:none;
 }
-
-form .message textarea {
+form .message textarea{
     min-width: 100%;
     max-width: 100%;
     min-height: 100px;
-    max-height: 300px;
-    ;
+    max-height: 300px;;
     padding: 15px 20px 0 48px;
 }
 
@@ -156,7 +135,6 @@ form .reset button:active{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
-
 ----------------Submit button--------------------
 .button-area button:focus{
     border: 2px solid ;
@@ -232,83 +210,31 @@ form .flex-container {
     cursor: pointer;
 }
 
-@media(max-width:600px) {
-    .container header {
+
+@media(max-width:600px){
+    .container header{
         text-align: center;
     }
-
-    form .dbl-field {
-        flex-direction: column;
+    form .dbl-field{
+        flex-direction:column;
         margin-bottom: 0px;
     }
-
-    .dbl-field .field {
+    .dbl-field .field{
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom:20px;
     }
-
-    form .message textarea {
-        resize: both;
+    form .message textarea{
+        resize:both;
     }
-
-    form .reset {
-        flex-direction: column;
+    form .flex-container{
+        flex-direction:column;
     }
-
-    .reset button {
+    .flex-container button{
         width: 100px;
     }
-
-    form .button-area {
-        flex-direction: column;
-    }
-
-    .button-area button {
-        width: 100px;
-    }
-
-    .button-area span {
-        text-align: center;
-        margin: 20px 0;
-    }
-
+    
 }
+  
 
-.fa {
-    padding: 20px;
-    font-size: 30px;
-    width: 30px;
-    text-align: center;
-    text-decoration: none;
-    margin: 5px 2px;
-    border-radius: 50%;
-}
 
-.fa:hover {
-    opacity: 0.7;
-}
 
-.fa-facebook {
-    background: #3B5998;
-    color: white;
-}
-
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
-}
-
-.fa-youtube {
-    background: #bb0000;
-    color: white;
-}
-
-.fa-instagram {
-    background: #125688;
-    color: white;
-}
-
-.fa-pinterest {
-    background: #cb2027;
-    color: white;
-}
