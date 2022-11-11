@@ -134,40 +134,36 @@ nav ul li:hover a + #sub-ul {
 /* ----------------------- RECOMMENDATION -------------------------------*/
 .top-movies {
     position: relative;
-    margin-bottom: 5.5rem;
+    overflow: hidden;
+    padding: 1rem 0;
 }
 
 .top-movies h2 {
     margin-left: 5.5rem;
 }
 
-.top-movies .btnNext, .top-movies .btnBack {
-    position: absolute;
-    width: 5.5rem;
-    height: 24rem;
-    opacity: 0.4;
-    transition: all 250ms ease;
-}
-
-.top-movies .btnNext {
-    right: 0;
-}
-
-.top-movies .btnNext:hover, .top-movies .btnBack:hover {
-    opacity: 1;
-}
 
 .movie-container {
-    display: grid;
+    /* display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
+    justify-items: center; */
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding: 0 5rem;
+}
+
+.movie-container::-webkit-scrollbar {
+    display: none;
 }
 
 .movie-info {
-    display: block;
-    width: 16rem;
-    height: 24rem;
+    flex: 0 0 auto;
+    width: 20rem;
+    height: 26rem;
     background-color: lightgray;
+    margin-right: 5rem;
 }
 
 .movie-info h4 {
@@ -187,6 +183,23 @@ nav ul li:hover a + #sub-ul {
 
 .add-watchlist:hover {
     background-color: gray;
+}
+
+.top-movies .btnNext, .top-movies .btnBack {
+    position: absolute;
+    width: 5.5rem;
+    height: 26rem;
+    opacity: 0.4;
+    transition: all 250ms ease;
+}
+
+.top-movies .btnNext {
+    right: 0;
+}
+
+.top-movies .btnNext:hover, .top-movies .btnBack:hover {
+    opacity: 1;
+    cursor: pointer;
 }
 
 /* ----------------------- REVIEWS -------------------------------*/
@@ -253,7 +266,6 @@ footer {
 .footer-copyright {
     font-size: small;
 }
-
     </style>
 
 </head>
@@ -271,6 +283,7 @@ footer {
                         <li><a href="#">TV Shows</a></li>
                     </ul>
                 </li>
+                <li><a href="#">News</a></li>
                 <li><a href="#">Surprise Me</a></li>
                 <li><a href="#">Watchlist</a></li>
             </ul>
@@ -295,8 +308,9 @@ footer {
     <div class="top-movies">
         <h2>Top Movies</h2>
 
-        <button class="btnNext">Next</button>
-        <button class="btnBack">Back</button>
+        <button class="btnNext" type="button">Next</button>
+        <button class="btnBack" type="button">Back</button>
+
         <div class="movie-container">
             
 
@@ -307,48 +321,78 @@ footer {
                 </div>
                 <button class="add-watchlist">+ Watchlist</button>
             </div>
+
             <div class="movie-info">
                 <h4>Movie Title</h4>
                 <div class="img-thumbnail">
                     <img src="" alt="movie name">
                 </div>
-                <button class="add-watchlist">+ Watchlist</button>
-            </div>
-            <div class="movie-info">
-                <h4>Movie Title</h4>
-                <div class="img-thumbnail">
-                    <img src="" alt="movie name">
-                </div>
-                
                 <button class="add-watchlist">+ Watchlist</button>
             </div>
 
+            <div class="movie-info">
+                <h4>Movie Title</h4>
+                <div class="img-thumbnail">
+                    <img src="" alt="movie name">
+                </div>
+                <button class="add-watchlist">+ Watchlist</button>
+            </div>
+
+            <div class="movie-info">
+                <h4>Movie Title</h4>
+                <div class="img-thumbnail">
+                    <img src="" alt="movie name">
+                </div>
+                <button class="add-watchlist">+ Watchlist</button>
+            </div>
+
+            <div class="movie-info">
+                <h4>Movie Title</h4>
+                <div class="img-thumbnail">
+                    <img src="" alt="movie name">
+                </div>
+                <button class="add-watchlist">+ Watchlist</button>
+            </div>
+
+            <div class="movie-info">
+                <h4>Movie Title</h4>
+                <div class="img-thumbnail">
+                    <img src="" alt="movie name">
+                </div>
+                <button class="add-watchlist">+ Watchlist</button>
+            </div>
+
+
         </div>
     </div>
+
     
     <div class="reviews">
         <h2>Community Reviews</h2>
-        <div class="review-container">
+            <div class="review-container">
+                <div class="review-block">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ornare quam viverra orci sagittis eu.</blockquote>
+                <p class="reviewer">Reviewer name 1</p>
+            </div>
+
             <div class="review-block">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ornare quam viverra orci sagittis eu.</blockquote>
-            <p class="reviewer">Reviewer name 1</p>
-        </div>
-        <div class="review-block">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ornare quam viverra orci sagittis eu.</blockquote>
-            <p class="reviewer">Reviewer name 2</p>
-        </div>
-        <div class="review-block">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ornare quam viverra orci sagittis eu.</blockquote>
-            <p class="reviewer">Reviewer name 3</p>
-        </div>
-        <div class="review-block">
-            <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ornare quam viverra orci sagittis eu.</blockquote>
-            <p class="reviewer">Reviewer name 4</p>
-        </div>
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ornare quam viverra orci sagittis eu.</blockquote>
+                <p class="reviewer">Reviewer name 2</p>
+            </div>
+
+            <div class="review-block">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ornare quam viverra orci sagittis eu.</blockquote>
+                <p class="reviewer">Reviewer name 3</p>
+            </div>
+
+            <div class="review-block">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ornare quam viverra orci sagittis eu.</blockquote>
+                <p class="reviewer">Reviewer name 4</p>
+            </div>
         </div>
         
     </div>
