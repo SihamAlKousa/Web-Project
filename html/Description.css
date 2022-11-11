@@ -97,6 +97,7 @@ nav ul li:hover a + #sub-ul {
     float: left;
     margin-right: 13.5px;
     margin-left: 13.5px;
+    margin-top: 13.5px;
 }
 figure{
     overflow: hidden;
@@ -224,14 +225,13 @@ figure{
 }
 /*footer*/
 footer {
+    position: relative;
     display: grid;
-    position:fixed;
+    width: 100%;
+    left: 0;
+    top: 50px;
     justify-content: center;
     background-color: lightgray;
-    left:0px;
-    bottom:0px;
-    z-index:1;
-    right:0;
 }
 
 
