@@ -17,7 +17,7 @@ body {
 }
 
 .block {
-    margin: 0 auto;
+    margin: 2rem auto;
     width: auto;
 }
 
@@ -130,6 +130,7 @@ nav ul li:hover a + #sub-ul {
     position: relative;
     overflow: hidden;
     padding: 1rem 0;
+    margin-bottom: 5.5rem;
 }
 
 .top-movies h2 {
@@ -208,13 +209,13 @@ nav ul li:hover a + #sub-ul {
 .review-container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-inline: 2rem;
+    gap: 4rem;
+    margin-inline: 4rem;
 }
 
 .review-block {
     background-color: white;
-    padding: 2rem;
+    padding: 4rem 2rem;
 }
 
 .reviewer {
