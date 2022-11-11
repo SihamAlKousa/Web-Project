@@ -114,6 +114,19 @@ img {
     float: left;
    
 }
+.des2 {
+    border-radius: 25px;
+    border: 2px solid black;
+    padding: 20px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    width: 100%;
+    height: 100px;
+    display: block;
+    float: left;
+   
+}
 
 
 
