@@ -3,281 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Home page</title>
-    <style>
-        * {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    outline: 0;
-    border: 0;
-    appearance: 0;
-}
-
-body {
-    background-color: gray;
-    font-family: sans-serif;
-    overflow-x: hidden;
-    line-height: 1.5rem;
-}
-
-.block {
-    margin: 0 auto;
-    width: auto;
-}
-
-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-h1, h2, h3 {
-    margin-bottom: 2.5rem;
-}
-
-
-
-/* ----------------------- NAV -------------------------------*/
-
-
-nav {
-    background-color: lightgray;
-    width: 100%;
-    height: 5.5rem;
-    position: relative;
-    top: 0;
-    z-index: 10;
-}
-
-
-nav ul {
-    position: absolute;
-    top: 2.25rem;
-    right: 4rem;
-    display: flex;
-    align-items: center;
-}
-
-nav ul li a {
-    padding: 3rem;
-}
-
-nav ul li a:hover {
-    color: black;
-}
-
-.nav-logo {
-    position: absolute;
-    top: 2.25rem;
-    left: 6.5rem;
-}
-
-#sub-ul {
-    top: 3.25rem;
-    right: auto;
-    flex-direction: column;
-    background-color: rgb(143, 143, 143);
-    visibility: hidden;
-    transition: all 250ms ease;
-    opacity: 0;
-}
-
-#sub-ul li a {
-    display: block;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-}
-
-nav ul li:hover a + #sub-ul {
-    visibility: visible;
-    opacity: 1;
-}
-
-/* ----------------------- IMG SLIDER -------------------------------*/
-.img-container {
-    position: relative;
-    height: 25rem;
-}
-
-.img-slider {
-    height: inherit;
-}
-
-.img-slider button {
-    position: absolute;
-    height: inherit;
-    width: 5.5rem;
-    opacity: 0.4;
-    transition: all 250ms ease;
-}
-
-.img-slider .btnNext {
-    right: 0;
-}
-
-.img-slider button:hover {
-    opacity: 1;
-}
-
-/* ----------------------- ABOUT US -------------------------------*/
-.about-us {
-    margin: 5.5rem;
-}
-
-.about-us p {
-    text-align: justify;
-}
-
-/* ----------------------- RECOMMENDATION -------------------------------*/
-.top-movies {
-    position: relative;
-    overflow: hidden;
-    padding: 1rem 0;
-}
-
-.top-movies h2 {
-    margin-left: 5.5rem;
-}
-
-
-.movie-container {
-    /* display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    justify-items: center; */
-    display: flex;
-    overflow-x: auto;
-    scroll-behavior: smooth;
-    padding: 0 5rem;
-}
-
-.movie-container::-webkit-scrollbar {
-    display: none;
-}
-
-.movie-info {
-    flex: 0 0 auto;
-    width: 20rem;
-    height: 26rem;
-    background-color: lightgray;
-    margin-right: 5rem;
-}
-
-.movie-info h4 {
-    text-align: center;
-    padding: 0.6rem 0;
-}
-
-.img-thumbnail {
-    height: 18rem;
-}
-
-.add-watchlist {
-    position: absolute;
-    padding: 0.6rem 1rem;
-    margin: 1% 1% 1% 4.8rem;
-}
-
-.add-watchlist:hover {
-    background-color: gray;
-}
-
-.top-movies .btnNext, .top-movies .btnBack {
-    position: absolute;
-    width: 5.5rem;
-    height: 26rem;
-    opacity: 0.4;
-    transition: all 250ms ease;
-}
-
-.top-movies .btnNext {
-    right: 0;
-}
-
-.top-movies .btnNext:hover, .top-movies .btnBack:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-/* ----------------------- REVIEWS -------------------------------*/
-.reviews {
-    margin-bottom: 5.5rem;
-}
-
-.reviews h2 {
-    margin-left: 5.5rem;
-}
-
-.review-container {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
-    margin-inline: 2rem;
-}
-
-.review-block {
-    background-color: white;
-    padding: 2rem;
-}
-
-.reviewer {
-    padding-top: 1rem;
-    font-weight: bold;
-    float: right;
-}
-
-/* ----------------------- FOOTER -------------------------------*/
-footer {
-    display: grid;
-    justify-content: center;
-    background-color: lightgray;
-}
-
-.footer-logo {
-    margin: 1rem auto;
-}
-
-.footer-media {
-    display: flexbox;
-    justify-content: space-evenly;
-    margin-bottom: 1rem;
-}
-
-.footer-media i {
-    padding-inline: 1rem;
-}
-
-.footer-links {
-    text-align: center;
-    margin: 2rem auto;
-}
-
-.footer-links ul li {
-    padding: 0.2rem 0;
-}
-
-.footer-copyright {
-    text-align: center;
-}
-
-.footer-copyright {
-    font-size: small;
-}
-    </style>
-
+    <link rel="stylesheet" href="homeStyle.css" type="text/css">
+    <script src="https://kit.fontawesome.com/3ae9fbf168.js" crossorigin="anonymous"></script>
+ 
 </head>
 <body>
     
         <nav>
             <div class="nav-logo">
-                <img src="" alt="logo">
+                <a href="home.html"><img src="" alt="logo"></a>
             </div>
             
             <ul>
-                <li><a href="#">Top Rating</a>
+                <li><a href="#">Category</a>
                     <ul id="sub-ul">
                         <li><a href="#">Movies</a></li>
                         <li><a href="#">TV Shows</a></li>
@@ -298,11 +36,14 @@ footer {
         </div>
     </div>
     
-    <section class="about-us">
-        <h1>About Us</h1>
+    <section class="block about-us">
+        <div class="about-us-container">
+           <h1>About Us</h1>
         <p>Our website is a movie and TV show library for fans or curious visitors to dive in and explore all about their favourite shows.
             We aim to provide best quality service together with solid content that will satisfy all visitors.
-        </p>
+        </p> 
+        </div>
+        
     </section>
 
     <div class="top-movies">
@@ -404,23 +145,16 @@ footer {
         
         
         <div class="footer-media">
-            <i>Youtube</i>
-            <i>Instagram</i>
-            <i>Facebook</i>
-            <i>Telegram</i>
-            <i>Twitter</i> 
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
         </div>
 
         
         <div class="footer-links">
-            <h3>Navigate</h3>
-           <ul>
-            <li><a href="#">Top-Rated Movies</a></li>
-            <li><a href="#">Top-Rated TV Shows</a></li>
-            <li><a href="#">NEWS</a></li>
-            <li><a href="#">Surprise Me</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul> 
+            <h4><a href="#">Contact Us</a></h4>
         </div>
         
         <div class="footer-copyright">
