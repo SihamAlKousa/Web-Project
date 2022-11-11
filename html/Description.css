@@ -201,8 +201,7 @@ img {
     text-align: left;
 }
 .rating{
-    border: 2px solid #283038;
-    border-radius: 2px;
+
     color: #9ab;
     font-size: 0.855rem;
     letter-spacing: .075em;
@@ -213,6 +212,13 @@ img {
     text-decoration: underline;
 }
 .rating:visited{color: rgb(75, 11, 64);}
+/*trailer*/
+.trailer{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin: 20px;
+}
 
 
 
