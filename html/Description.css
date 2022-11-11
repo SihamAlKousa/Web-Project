@@ -222,6 +222,51 @@ figure{
     float: left;
     margin: 20px;
 }
+/*footer*/
+footer {
+    display: grid;
+    position:fixed;
+    justify-content: center;
+    background-color: lightgray;
+    left:0px;
+    bottom:0px;
+    z-index:1;
+    right:0;
+}
 
 
+.footer-logo {
+    margin: 1rem auto;
+}
+
+.footer-media {
+    display: flexbox;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.footer-media i {
+    padding-inline: 1rem;
+}
+
+.footer-links {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.footer-links ul li {
+    padding: 0.2rem 0;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright {
+    font-size: small;
+}
+
+.fa-brands {
+    font-size: 24px;
+}
 
