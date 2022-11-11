@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <title>Movies</title>
+        <link rel="stylesheet" href="Description.css">
 
     </head>
     <body>
@@ -34,16 +34,7 @@ Proin sit amet mi at ante convallis egestas sit amet nec tortor. Proin ultricies
             </p>
         </div>
         <hr>
-        <div class="keywords">
-            <h4>Keywords</h4>
 
-            <p>Keyword1</p>
-            <p>Keyword2</p>
-            <p>Keyword3</p>
-            <p>Keyword4</p>
-            <p>Keyword5</p>
-
-        </div>
         <hr>
         <h3><strong>About the movie</strong></h3>
         
@@ -54,8 +45,121 @@ Proin sit amet mi at ante convallis egestas sit amet nec tortor. Proin ultricies
             <div>Country:</div>
             <div>Duration:</div>
             <div>Release:</div>
-            <div><img src="Images/rating.png" width="170" height="80" ></div>
         </div>
         
+    </body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Movies</title>
+        <link rel="stylesheet" href="movies.css">
+        <script src="https://kit.fontawesome.com/3ae9fbf168.js" crossorigin="anonymous"></script>
+        
+    </head>
+    <body>
+
+        <nav>
+            <div class="nav-logo">
+                <a href="home.html"><img src="" alt="logo"></a>
+            </div>
+            
+            <ul>
+                <li><a href="#">Category</a>
+                    <ul id="sub-ul">
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Surprise Me</a></li>
+                <li><a href="#">Watchlist</a></li>
+            </ul>
+        </nav>
+
+        <div class="container">
+        <aside class="poster">
+            <figure><img src="images/batman.jpg" alt="batman"></figure>
+        </aside>
+
+        <section class="title">
+            <h1>The Batman</h1>
+            <!--<p><small class="year">2017</small></p>-->
+        </section>
+
+        <div  class="summary">
+            <p> Batman ventures into Gotham City's underworld when a sadistic killer leaves behind a trail of cryptic clues. As the evidence begins to lead closer to home and the scale of the perpetrator's plans become clear, he must forge new relationships, unmask the culprit and bring justice to the abuse of power and corruption that has long plagued the metropolis.</p>
+        </div>
+
+        <div class="trailer">
+            <iframe width="400" height="300" src="https://www.youtube.com/embed/mqqft2x_Aa4" title="THE BATMAN – Main Trailer" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <!------------->
+        <div class="description">
+            <ul>
+                <li><h3><span>Director</span></h3> <p>Matt Reeves</p></li>
+                <li><h3><span>Gnere</span></h3> <p>Crime</p> <p>Action</p> <p>Drama</p></li>
+                <li><h3><span>Country</span></h3> <p>USA</p></li>
+                <li><h3><span>Release date:</span></h3> <p>March 4, 2022 </p></li>
+                <li><h3><span>Duration</span></h3> <p>19</p></li>
+            </ul>
+        </div>
+
+        <!--<section>
+            <div class="ratings">
+                <ul><li><h2>Ratings</h2></li>
+                    <br>
+                    <li>8.6/10<h4><span>IMDb</span></h4></li>
+                    <li>97%<h4><span>Rotten Tomatoes</span></h4></li>
+                </ul>
+            </div>
+        </section> -->
+
+        <section>
+            <div class="poster">
+                <ul><li><h1>Other TvShows</h1></li>
+                    <br><br>
+                <li><figure><a href="#"><img src="Images/Freinds.jpg" alt="Freinds"></a></figure></li>
+                <li><li><figure><a href="#"><img src="Images/Greys_Anatomy.jpg" alt="Greys Anatomy"></a></figure></li>
+                <li><li><figure><a href="#"><img src="Images/Suits.jpg" alt="Suits"></a></figure></li>
+                <li><li><figure><a href="#"><img src="Images/Howimetyourmother.jpg" alt="How I Met Your Mother"></a></figure></li>
+            </ul>
+            </div>
+        </section>
+</div>
+
+
+
+
+
+<!---------footer------------>
+<footer >
+        <div class="footer-logo">
+            <img src="" alt="website logo">
+        </div>
+        
+        
+        <div class="footer-media">
+            <i class="fa-brands fa-youtube"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-telegram"></i>
+            <i class="fa-brands fa-twitter"></i>
+        </div>
+
+        
+        <div class="footer-links">
+            <h4><a href="#">Contact Us</a></h4>
+        </div>
+        
+        <div class="footer-copyright">
+            <p><span>&copy;</span>Website project 2022. Movie rating website</p>
+        </div>
+        
+    </footer>
+
     </body>
 </html>
