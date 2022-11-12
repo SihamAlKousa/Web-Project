@@ -12,7 +12,9 @@
     appearance: none;
     color: #e2e2e2;
 }
-
+p{
+    padding: 5px;
+}
 body {
     background-color: #161622;
     overflow-x: hidden;
