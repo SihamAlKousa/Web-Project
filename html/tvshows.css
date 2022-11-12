@@ -93,6 +93,11 @@ nav ul li:hover a + #sub-ul {
     margin-left: 20px;
     margin-right: 50px;
 }
+.poster ul li h1{
+    margin-right: 600px;
+    margin-bottom: 10px;
+
+}
 .poster ul li{
     float: left;
     margin-right: 13.5px;
