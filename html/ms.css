@@ -11,9 +11,6 @@
     color: white;
 }
 
-
-/* ----------------------- NAV -------------------------------*/
-
 * {
     padding: 0;
     margin: 0;
@@ -23,25 +20,6 @@
     outline: 0;
     border: 0;
     appearance: 0;
-}
-footer {
-    display: grid;
-    justify-content: center;
-    background-color: lightgray;
-}
-
-.footer-logo {
-    margin: 1rem auto;
-}
-
-.footer-media {
-    display: flexbox;
-    justify-content: space-evenly;
-    margin-bottom: 1rem;
-}
-
-.footer-media i {
-    padding-inline: 1rem;
 }
 
 body {
@@ -114,9 +92,6 @@ nav ul li:hover a + #sub-ul {
 }
 
 
-
-/* ----------------------- NAVEND -------------------------------*/
-
 body{
 
     background: #1f2833;
@@ -124,36 +99,65 @@ body{
 
 .heading{
     align-content: center;
-    padding-top: 30px;
+    margin-right: auto;
+    margin-left:auto;
 
 }
 
 .movies-container{
-    max-width: 968px;
+    max-width: 1500px;
     margin-right: auto;
     margin-left:auto;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(180px,auto));
-    gap:0.9rem;
+    gap:5rem;
     margin-top: 2rem;
 }
+
 .box .box-img{
     width:100%;
-    height: 270px;
+    height: 350px;
+    width: 210px;
 }
+
 .box .box-img img{
     width: 100%;
     height:100%;
     object-fit: cover;
 }
+
 .box .box-img img:hover{
     transform:translateY(-12px);
     transition: 0.2s all linear;
 }
+
 .box h3{
+    padding-top: 10px;
     font-size: 0.9rem;
     font-weight: 500;
 }
+
 .box span{
+
    font-size: 13px; 
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.footer-logo {
+    margin: 1rem auto;
+}
+
+.footer-media {
+    display: flexbox;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.footer-media i {
+    padding-inline: 1rem;
 }
