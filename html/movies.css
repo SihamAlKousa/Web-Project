@@ -149,11 +149,13 @@ img {
     
 }
 .title h1{
-    font-size: xx-large;
+    font-size:2rem;
     font-weight: bold;
+    color:#8ea2b6;
 }
 .summary {
-    
+    color:#697a8c;
+    box-shadow: 3px 4px 9px 4px #697a8c;
     border-radius: 5px;
     border: 2px solid black;
     padding: 10 20 20 20px;
@@ -172,6 +174,8 @@ img {
 .description {
     border-radius: 25px;
     border: 2px solid black;
+    color:#8ea2b6;
+    box-shadow: 3px 4px 9px 4px #697a8c;
     padding: 20px;
     padding-top: 20px;
     margin-top: 40px;
@@ -210,6 +214,7 @@ img {
     padding-left:550px;
     display: block;
     float: left;
+    color:#8ea2b6;
 }
 .ratings ul li p{
     box-sizing: border-box;
@@ -228,6 +233,7 @@ img {
     font-size: 16px;;
 }
 .cast{
+    color:#8ea2b6;
     margin: 20px;
     position:relative;
     padding: 20px;
