@@ -32,7 +32,7 @@ body{
 }
 .container h3{
     font-size:30px;
-    font-weight: 1000px;
+    font-weight:inherit;
     padding:5px 10px;
    
 }
