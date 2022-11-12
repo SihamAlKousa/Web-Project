@@ -24,6 +24,25 @@
     border: 0;
     appearance: 0;
 }
+footer {
+    display: grid;
+    justify-content: center;
+    background-color: lightgray;
+}
+
+.footer-logo {
+    margin: 1rem auto;
+}
+
+.footer-media {
+    display: flexbox;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.footer-media i {
+    padding-inline: 1rem;
+}
 
 body {
     background-color: gray;
