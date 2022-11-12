@@ -8,7 +8,7 @@
     outline: 0;
     border: 0;
     appearance: none;
-    color: #e2e2e2;
+    color:#e2e2e2;
 }
 
 body {
@@ -18,31 +18,29 @@ body {
     line-height: 1.5rem;
     margin: 0;
 }
-
 .block {
     margin: 0 auto;
     width: auto;
 }
 
-.container {
+.container{
     max-width: 1140px;
     height: 700px;
     margin: 20px auto;
     padding: 20px;
 }
-
 /* Navigation */
 
 
 nav {
-    background-color: #0B0C10;
+    background-color:  #0B0C10;
     width: 100%;
     height: 5.5rem;
     position: relative;
     top: 0;
     z-index: 10;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem #0B0C10;
-    color: #C5C6C7;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem  #0B0C10;
+    color:#C5C6C7;
 }
 
 
@@ -52,13 +50,13 @@ nav ul {
     right: 4rem;
     display: flex;
     align-items: center;
-    color: #C5C6C7;
+    color:#C5C6C7;
 }
 
 nav ul li a {
     padding: 3rem;
-    color: #C5C6C7;
-
+    color:#C5C6C7;
+    
 }
 
 nav ul li a:hover {
@@ -69,8 +67,8 @@ nav ul li a:hover {
     position: absolute;
     top: 2.25rem;
     left: 6.5rem;
-
-
+    
+    
 }
 
 #sub-ul {
@@ -89,7 +87,7 @@ nav ul li a:hover {
     padding-bottom: 1.5rem;
 }
 
-nav ul li:hover a+#sub-ul {
+nav ul li:hover a + #sub-ul {
     visibility: visible;
     opacity: 1;
 }
@@ -101,112 +99,105 @@ nav ul li:hover a+#sub-ul {
     float: left;
     margin-left: 20px;
     margin-right: 50px;
-    color: #C5C6C7;
-    padding-top: 25px;
+    color:#C5C6C7;
 }
-
-.poster ul li {
+.poster ul li h1{
+    margin-right: 600px;
+    margin-bottom: 10px;
+}
+.poster ul li{
     float: left;
     margin-right: 13.5px;
     margin-left: 13.5px;
     margin-top: 13.5px;
 }
 
-figure {
+figure{
     overflow: hidden;
 }
-
 .poster figure {
-    position: relative;
+	position: relative;
 }
-
 .poster figure::before {
-    position: absolute;
-    top: 0;
-    left: -90%;
-    z-index: 2;
-    display: block;
-    content: '';
-    width: 50%;
-    height: 98%;
+	position: absolute;
+	top: 0;
+	left: -90%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 98%;
     border-radius: 25%;
-    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
-    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, .3) 100%);
-    -webkit-transform: skewX(-25deg);
-    transform: skewX(-25deg);
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
 }
-
 .poster figure:hover::before {
-    -webkit-animation: shine .75s;
-    animation: shine .75s;
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
 }
-
 @-webkit-keyframes shine {
-    100% {
-        left: 125%;
-    }
+	100% {
+		left: 125%;
+	}
 }
-
 @keyframes shine {
-    100% {
-        left: 125%;
-    }
+	100% {
+		left: 125%;
+	}
 }
-
 img {
     border-radius: 2%;
     width: 230px;
     height: 345px;
 }
 
-
 /*movie title and its description*/
 .title {
     color: black;
     font-size: 24px;
     margin: 0 0 12px;
-
+    
 }
-
-.title h1 {
-    margin-top: -30px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-    font-size: 2rem;
-    margin-left: -10px;
+.title h1{
+    margin-top:-40px;
+    padding:20px;
+    font-size:2rem;
     font-weight: bold;
-    color: #C5C6C7;
+    color:#C5C6C7;
 }
-
 .summary {
-    color: #515e6b;
+    color:#515e6b;
     box-shadow: 3px 4px 15px 1px #4b4b4b;
     border-radius: 5px;
     border: 2px solid none;
-
-    margin-right: 30px;
-    margin-left: -20px;
+    padding: 10 20 20 20px;
+    margin-right:30px;
     width: 450px;
-    height: 335px;
+    height: 330px;
     display: block;
     float: left;
-    color: #e2e2e2;
-
+    color:#e2e2e2;
+    margin-top:-20px;
+   
 }
-
-.summary p {
-    margin: 20px;
+.summary p{
+    margin:20px;
 }
-
-.trailer {
-    margin:0;
+.trailer{
     padding:0;
+    margin:0;
+    margin-top:-20px;
+    
 }
-
+iframe{
+    border-radius: 6px;
+}
 .description {
     border-radius: 25px;
     border: 2px solid black;
-    color: #8ea2b6;
+    color:#8ea2b6;
     box-shadow: 3px 4px 15px 2px #4b4b4b;
     padding: 20px;
     padding-top: 20px;
@@ -216,11 +207,11 @@ img {
     height: 360px;
     display: block;
     float: left;
-    font-size: 16px;
-
+    font-size:16px;
+   
 }
-
-.description ul li p {
+.description ul li p{
+    
     box-sizing: border-box;
     margin-bottom: 1px;
     margin-right: 1px;
@@ -230,62 +221,58 @@ img {
     background: #45515e;
     border-radius: 3px;
     box-shadow: inset 0 1px transparent;
-    color: rgb(255, 255, 255);
+    color:  rgb(255, 255, 255);
     display: inline-block;
     padding: 3px 6px;
     white-space: nowrap;
 }
 
-.ratings {
+.ratings{
     margin: 20px;
-    position: relative;
+    position:relative;
     padding: 20px;
     margin-top: -358px;
     margin-right: 20px;
     width: 100%;
     height: 360px;
-    padding-left: 550px;
+    padding-left:550px;
     display: block;
     float: left;
-    color: #8ea2b6;
-    font-size: 16px;
+    color:#8ea2b6;
+    font-size:16px;
 }
-
-.ratings ul li p {
+.ratings ul li p{
     box-sizing: border-box;
     margin-bottom: 1px;
     margin-right: 1px;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    background: #45515e;
+    background:#45515e;
     border-radius: 3px;
     box-shadow: inset 0 1px transparent;
-    color: rgb(255, 255, 255);
+    color:  rgb(255, 255, 255);
     display: inline-block;
     padding: 0px 6px;
     white-space: nowrap;
-    font-size: 16px;
-    ;
+    font-size: 16px;;
 }
-
-.cast {
-    color: #8ea2b6;
+.cast{
+    color:#8ea2b6;
     margin: 20px;
-    position: relative;
+    position:relative;
     padding: 20px;
     margin-top: -240px;
     margin-right: 20px;
     width: 100%;
     height: 360px;
-    padding-left: 550px;
+    padding-left:550px;
     display: block;
     float: left;
     margin-bottom: -200px;
-    font-size: 16px;
+    font-size:16px;
 }
-
-.cast ul li p {
+.cast ul li p{
     box-sizing: border-box;
     margin-bottom: 1px;
     margin-right: 1px;
@@ -299,10 +286,8 @@ img {
     display: inline-block;
     padding: 0 6px;
     white-space: nowrap;
-    font-size: 16px;
-    ;
+    font-size: 16px;;
 }
-
 /* ----------------------- FOOTER -------------------------------*/
 
 footer {
@@ -349,3 +334,5 @@ footer {
 .fa-brands {
     font-size: 24px;
 }
+
+
