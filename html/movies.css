@@ -154,7 +154,7 @@ img {
     color:#8ea2b6;
 }
 .summary {
-    color:#697a8c;
+    color:#515e6b;
     box-shadow: 3px 4px 9px 4px #697a8c;
     border-radius: 5px;
     border: 2px solid black;
@@ -184,6 +184,7 @@ img {
     height: 360px;
     display: block;
     float: left;
+    font-size:16px;
    
 }
 .description ul li p{
@@ -194,10 +195,10 @@ img {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    background: #283038;
+    background: #45515e;
     border-radius: 3px;
     box-shadow: inset 0 1px transparent;
-    color: #9ab;
+    color:  rgb(255, 255, 255);
     display: inline-block;
     padding: 3px 6px;
     white-space: nowrap;
@@ -215,6 +216,7 @@ img {
     display: block;
     float: left;
     color:#8ea2b6;
+    font-size:16px;
 }
 .ratings ul li p{
     box-sizing: border-box;
@@ -223,10 +225,10 @@ img {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    background: #283038;
+    background:#45515e;
     border-radius: 3px;
     box-shadow: inset 0 1px transparent;
-    color: #9ab;
+    color:  rgb(255, 255, 255);
     display: inline-block;
     padding: 0px 6px;
     white-space: nowrap;
@@ -245,6 +247,7 @@ img {
     display: block;
     float: left;
     margin-bottom: -200px;
+    font-size:16px;
 }
 .cast ul li p{
     box-sizing: border-box;
@@ -253,10 +256,10 @@ img {
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    background: #283038;
+    background: #45515e;
     border-radius: 3px;
     box-shadow: inset 0 1px transparent;
-    color: #9ab;
+    color: rgb(255, 255, 255);
     display: inline-block;
     padding: 0 6px;
     white-space: nowrap;
