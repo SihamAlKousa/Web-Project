@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 * {
     box-sizing: border-box;
     padding: 0;
@@ -13,7 +14,7 @@
 
 body {
     background-color:#181726;
-    font-family: sans-serif;
+    font-family:"Poppins", sans-serif;
     overflow-x: hidden;
     line-height: 1.5rem;
     margin: 0;
@@ -281,17 +282,23 @@ iframe{
     margin-bottom: -200px;
     font-size:16px;
 }
+.cast ul li span{
+    color: #a08bba;
+    font-size:18px;
+    font-weight: 600;
+}
 .cast ul li p{
+    font-weight: lighter;
     box-sizing: border-box;
     margin-bottom: 1px;
     margin-right: 1px;
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    background: #45515e;
+    background: #e1d3f3de;
     border-radius: 3px;
     box-shadow: inset 0 1px transparent;
-    color: rgb(255, 255, 255);
+    color: #3a2a5b;
     display: inline-block;
     padding: 0 6px;
     white-space: nowrap;
