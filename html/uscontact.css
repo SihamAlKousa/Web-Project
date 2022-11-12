@@ -12,7 +12,9 @@
     appearance: none;
     color: #e2e2e2;
 }
-
+p{
+    padding: 5px;
+}
 body {
     background-color: #161622;
     overflow-x: hidden;
@@ -35,7 +37,7 @@ body {
 }
 /* Navigation */
 nav {
-    background-color: #181726;
+    background-color: #2b2945c2;
     width: 100%;
     height: 5.5rem;
     position: relative;
@@ -78,6 +80,7 @@ nav ul li a:hover {
     visibility: hidden;
     transition: all 250ms ease;
     opacity: 0;
+    background-color: #2b2945c2;
 }
 
 #sub-ul li a {
@@ -162,7 +165,7 @@ footer {
     left: 0;
     top: 50px;
     justify-content: center;
-    background-color: #181726;
+    background-color: #2b2945c2;
 }
 
 
