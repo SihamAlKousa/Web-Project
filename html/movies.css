@@ -40,8 +40,7 @@ nav {
     position: relative;
     top: 0;
     z-index: 10;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem  #11111b;
-    
+    box-shadow: 3px 4px 15px 1px #11111b;
     color:#C5C6C7;
     
 }
@@ -171,7 +170,7 @@ img {
     color:#C5C6C7;
 }
 .summary {
-    color:#515e6b;
+   
     box-shadow: 3px 4px 15px 1px #11111b;
     border-radius: 5px;
     border: 2px solid none;
@@ -195,12 +194,11 @@ img {
     
 }
 iframe{
-    border-radius: 6px;
+    border-radius: 5px;
 }
 .description {
     border-radius: 25px;
-    
-    box-shadow: 3px 4px 15px 2px #11111b;
+    box-shadow: 3px 4px 10px 4px #11111b;
     padding: 20px;
     padding-top: 20px;
     margin-top: 40px;
