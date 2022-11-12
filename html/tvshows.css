@@ -32,13 +32,13 @@ body {
 }
 /* Navigation */
 nav {
-    background-color: #1A1D26;
+    background-color: #181726;
     width: 100%;
     height: 5.5rem;
     position: relative;
     top: 0;
     z-index: 10;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem #211340;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem #11111b;
     border-radius: 50px;
     color: #C6C7C7;
 }
@@ -183,8 +183,10 @@ figure{
     display: block;
     float: left;
     font-size: 16px;
-    color: #8ea2b6;
-   
+}
+.des2 ul li span{
+    color: #a08bba;
+    font-size: 18px;
 }
 .des2 ul li p{
     box-sizing: border-box;
@@ -193,10 +195,10 @@ figure{
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    background: #45515e;
+    background: #e1d3f3de;
     border-radius: 3px;
     box-shadow: inset 0 1px transparent;
-    color: #fff;
+    color: #3a2a5b;
     display: inline-block;
     padding: 3px 6px;
     white-space: nowrap;
@@ -275,8 +277,11 @@ figure{
     padding-left:550px;
     display: block;
     float: left;
-    color:#8ea2b6;
     font-size:16px;
+}
+.ratings ul li h2{
+    color: #a08bba;
+    font-size: 18px;
 }
 .ratings ul li p{
     box-sizing: border-box;
@@ -285,10 +290,10 @@ figure{
     max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    background:#45515e;
+    background:#e1d3f3de;
     border-radius: 3px;
     box-shadow: inset 0 1px transparent;
-    color:  rgb(255, 255, 255);
+    color:  #3a2a5b;
     display: inline-block;
     padding: 0px 6px;
     white-space: nowrap;
