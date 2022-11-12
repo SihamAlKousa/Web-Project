@@ -212,7 +212,7 @@ img {
     float: left;
 }
 .cast{
-        margin: 20px;
+     margin: 20px;
     position:relative;
     padding: 20px;
     margin-top: -198px;
@@ -236,8 +236,9 @@ img {
     box-shadow: inset 0 1px transparent;
     color: #9ab;
     display: inline-block;
-    padding: 3px 6px;
+    padding: 0 6px;
     white-space: nowrap;
+    font-size: 14px;;
 }
 /* ----------------------- FOOTER -------------------------------*/
 
