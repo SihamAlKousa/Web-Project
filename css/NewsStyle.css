@@ -1,0 +1,134 @@
+hr{
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+.socials {
+    
+margin: auto;
+width: 1%;
+padding: 10px;
+position: relative;
+}
+nav ul {
+padding: 0;
+margin: 0;
+text-decoration: none;
+list-style: none;
+box-sizing: border-box;
+outline: 0;
+border: 0;
+appearance: 0;
+}
+
+body {
+background-color: gray;
+font-family: sans-serif;
+overflow-x: hidden;
+line-height: 1.5rem;
+}
+
+
+
+nav {
+background-color: lightgray;
+width: 100%;
+height: 5.5rem;
+position: relative;
+top: 0;
+z-index: 10;
+box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+}
+
+
+nav ul {
+position: absolute;
+top: 2.25rem;
+right: 4rem;
+display: flex;
+align-items: center;
+}
+
+nav ul li a {
+padding: 3rem;
+color: black;
+}
+
+nav ul li a:hover {
+color: gray;
+}
+
+.nav-logo {
+position: absolute;
+top: 2.25rem;
+left: 6.5rem;
+}
+
+#sub-ul {
+top: 3.25rem;
+right: auto;
+flex-direction: column;
+background-color: lightgray;
+visibility: hidden;
+transition: all 250ms ease;
+opacity: 0;
+}
+
+#sub-ul li a {
+display: block;
+padding-top: 1.5rem;
+padding-bottom: 1.5rem;
+}
+
+nav ul li:hover a + #sub-ul {
+visibility: visible;
+opacity: 1;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+footer
+{
+    background-color: black;
+    }
+    h3{
+        position: relative;
+        opacity: .9;
+        font-size: 24px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    
+    .pageMargin{
+            margin-right: 150px;
+margin-left: 150px;
+        }
+    
+                
+    .subnews{
+        padding-top: 30px;
+        padding-bottom: 50px;
+        
+                }
+
+    .floatingElements { background-color: rgb(230, 228, 173);
+                padding-left: 60px;
+                padding-top: 5px;
+                
+                float: left;}
+    .wrapper{
+        background-color: #333;
+        color: white;
+        text-align: center;
+        width: 100%;
+        padding-top: 25px;
+
+    }
+    .footer {
+position:fixed;
+bottom:0;
+left:0;
+width:100%;
+height: 90px;
+background-color: #D0DAEE;
+}
