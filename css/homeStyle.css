@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --dard-bg: #161622;
+    --purple: #2b2945c2;
+    --ligth-purple: #8f72ff;
+    --gray-purple: #e6e2fd;
+    --gray: #dddddd;
+    --shadow: 3px 4px 15px 1px #11111b;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -7,10 +18,11 @@
     outline: 0;
     border: 0;
     appearance: 0;
+    font-family:"Poppins", sans-serif;
 }
 
 body {
-    background-color: gray;
+    background-color: var(--dard-bg);
     font-family: sans-serif;
     overflow-x: hidden;
     line-height: 1.5rem;
@@ -37,7 +49,7 @@ h1, h2, h3 {
   }
   
   ::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(67, 67, 67); 
+    box-shadow: var(--shadow); 
   }
    
   ::-webkit-scrollbar-thumb {
@@ -52,13 +64,13 @@ h1, h2, h3 {
 
 
 nav {
-    background-color: lightgray;
+    background-color: var(--purple);
     width: 100%;
     height: 5.5rem;
     position: relative;
     top: 0;
     z-index: 10;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+    box-shadow: var(--shadow);
 }
 
 
@@ -72,11 +84,11 @@ nav ul {
 
 nav ul li a {
     padding: 3rem;
-    color: black;
+    color: var(--gray);
 }
 
 nav ul li a:hover {
-    color: gray;
+    color: var(--ligth-purple);
 }
 
 .nav-logo {
@@ -89,7 +101,7 @@ nav ul li a:hover {
     top: 3.25rem;
     right: auto;
     flex-direction: column;
-    background-color: lightgray;
+    background-color: #26243C;
     visibility: hidden;
     transition: all 250ms ease;
     opacity: 0;
@@ -110,43 +122,61 @@ nav ul li:hover a + #sub-ul {
 .img-container {
     position: relative;
     z-index: 9;
-    height: 25rem;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
-    background-color: gray;
+    height: 33rem;
+    box-shadow: var(--shadow);
+    background-color: var(--ligth-purple);
+    overflow: hidden;
 }
 
 .img-slider {
-    height: inherit;
+    height: 100%;
+    width: 100%;
 }
 
-.img-slider button {
+.btnNext, .btnBack {
     position: absolute;
     height: inherit;
     width: 5.5rem;
     opacity: 0.4;
     transition: all 250ms ease;
+    background-color: var(--ligth-purple);
+    text-align: center;
+    padding-top: 16%;
 }
 
-.img-slider .btnNext {
+.img-container .btnNext {
     right: 0;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
 
-.img-slider button:hover {
-    opacity: 1;
+.img-container .btnBack {
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.btnNext:hover, .btnBack:hover {
+    opacity: 0.8;
+    cursor: pointer;
 }
 
 /* ----------------------- ABOUT US -------------------------------*/
 .about-us {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
     position: relative;
     z-index: 8;
+    padding: 4rem 6rem;
 }
 .about-us-container {
-    padding: 10rem 12rem;
-    background-color: gray;
-    
+    background-color: var(--dard-bg);
+    color: var(--gray);
+    box-shadow: var(--shadow);
+    padding: 5rem;
+    margin-inline: 10rem;
+    border-radius: 10px;
+}
+
+.about-us-container h1 {
+    color: white;
 }
 
 .about-us p {
@@ -160,14 +190,15 @@ nav ul li:hover a + #sub-ul {
     z-index: 7;
     overflow: hidden;
     padding: 8rem 0 5rem 0;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
-    background-color: gray;
+    /* box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem var(--shadow-purple); */
+    background-color: var(--dard-bg);
     
 }
 
 .top-movies h2 {
     margin-left: 5.5rem;
-    
+    color: white;
+    font-size: 2rem;
 }
 
 
@@ -197,31 +228,37 @@ nav ul li:hover a + #sub-ul {
     
     background-color: lightgray;
     margin-right: 5rem; */
-    background-color: lightgray;
+    background-color: var(--gray-purple);
     height: 26rem;
+    box-shadow: var(--shadow);
+    border-radius: 10px;
 }
 
 .movie-info h4 {
     text-align: center;
     padding: 0.6rem 0;
+    color: var(--dard-bg);
 }
 
-.img-thumbnail {
+.img-thumbnail img{
     height: 18rem;
+    object-fit: contain;
 }
 
 .add-watchlist a {
     position: relative;
-    top: 0;
+    top: 30px;
     left: 30%;
     width: 40%;
     padding: 0.6rem 1rem;
-    background-color: gray;
-    color: black;
+    background-color: var(--purple);
+    color: var(--gray);
+    transition: all 250ms ease;
+    border-radius: 5px;
 }
 
 .add-watchlist a:hover {
-    background-color: white;
+    background-color: var(--ligth-purple);
 }
 
 /* ----------------------- REVIEWS -------------------------------*/
@@ -229,11 +266,12 @@ nav ul li:hover a + #sub-ul {
     padding: 8rem 5rem;
     position: relatvie;
     z-index: 6;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+    box-shadow: var(--shadow);
 }
 
 .reviews h2 {
     margin-left: 5.5rem;
+    color: white;
 }
 
 .review-container {
@@ -244,24 +282,28 @@ nav ul li:hover a + #sub-ul {
 }
 
 .review-block {
-    background-color: white;
+    background-color: var(--gray-purple);
     padding: 4rem 2rem;
+    box-shadow: var(--shadow);
+    color: var(--dard-bg);
+    border-radius: 10px;
 }
 
 .reviewer {
     padding-top: 1rem;
     font-weight: bold;
     float: right;
+    color: var(--shadow);
 }
 
 /* ----------------------- FOOTER -------------------------------*/
 footer {
     position: relative;
     z-index: 5;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+    box-shadow: var(--shadow);
     display: grid;
     justify-content: center;
-    background-color: lightgray;
+    background-color: var(--purple);
 }
 
 .footer-logo {
@@ -281,24 +323,32 @@ footer {
 .footer-links {
     text-align: center;
     margin: 2rem auto;
+    
+}
+
+.footer-links h4 a {
+    color: var(--gray);
+}
+
+.footer-links h4 a:hover {
+    color: var(--ligth-purple);
 }
 
 .footer-copyright {
     text-align: center;
+    font-size: small;
+    color: var(--gray);
 }
 
-.footer-copyright {
-    font-size: small;
-}
 
 .fa-brands {
     font-size: 24px;
-    color: black;
+    color: white;;
     padding: 0.8rem 0.4rem;
     transition: all 250ms ease;
 }
 
 .fa-brands:hover {
-    color: white;
+    color: var(--ligth-purple);
 }
 
