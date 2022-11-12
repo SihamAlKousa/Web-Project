@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -13,7 +15,6 @@
 
 body {
     background-color: #181726;
-    font-family: sans-serif;
     overflow-x: hidden;
     line-height: 1.5rem;
     margin: 0;
@@ -34,13 +35,12 @@ body {
 /* Navigation */
 nav {
     background-color: #181726;
-    width: 100%;
+    
     height: 5.5rem;
     position: relative;
     top: 0;
     z-index: 10;
     box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem #11111b;
-    border-radius: 50px;
     color: #C5C6C7;
 }
 
@@ -51,11 +51,12 @@ nav ul {
     right: 4rem;
     display: flex;
     align-items: center;
+    color: #C5C6C7;
 }
 
 nav ul li a {
     padding: 3rem;
-    color: black;
+    color: #C5C6C7;
 }
 
 nav ul li a:hover {
@@ -72,7 +73,7 @@ nav ul li a:hover {
     top: 3.25rem;
     right: auto;
     flex-direction: column;
-    background-color: lightgray;
+    background-color: #0b0c10;
     visibility: hidden;
     transition: all 250ms ease;
     opacity: 0;
@@ -96,6 +97,7 @@ nav ul li:hover a + #sub-ul {
     float: left;
     margin-left: 20px;
     margin-right: 50px;
+    color: #C5C6C7;
 }
 .poster ul li h1{
     margin-right: 600px;
@@ -107,6 +109,9 @@ nav ul li:hover a + #sub-ul {
     margin-right: 13.5px;
     margin-left: 13.5px;
     margin-top: 13.5px;
+}
+.poster ul li h1{
+    color: #a08bba;
 }
 figure{
     overflow: hidden;
@@ -221,7 +226,7 @@ figure{
     margin-bottom: -200px;
     font-size:16px;
 }
-.seasons ul li h3{
+.seasons ul li h3 span{
     color: #a08bba;
     font-size: 18px;
 }
@@ -255,6 +260,10 @@ figure{
     float: left;
     margin-bottom: -200px;
     font-size:16px;
+}
+.cast ul li h3 span{
+    color: #a08bba;
+    font-size: 18px;
 }
 .cast ul li p{
     box-sizing: border-box;
@@ -306,7 +315,7 @@ figure{
     white-space: nowrap;
     font-size: 16px;;
 }
-.ratings ul li h4{
+.ratings ul li h4 span{
     text-transform: uppercase;
     color: #a08bba;
 }
