@@ -1,4 +1,3 @@
-
 /* Abdullah Awadh Ahmed Bamatraf U21107482 */
 
 
@@ -13,22 +12,15 @@
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
     color: white;
+     outline: 0;
+    border: 0;
+    appearance: 0;
 }
 
 
 /* ----------------------- NAV -------------------------------*/
 
 
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    outline: 0;
-    border: 0;
-    appearance: 0;
-}
 
 
 nav {
