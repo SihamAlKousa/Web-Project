@@ -108,52 +108,35 @@ form .message textarea{
 }
 
 
-.flex-container {
+form .button-area {
+    margin:25px 0;
     display: flex;
+    align-items: center;
 }
 
-.flex-container>div {
-
-    margin: 10px;
-    padding: 20px;
-    font-size: 30px;
-}
-
-.flex-container button:focus {
+.button-area button:focus {
     border: 2px solid;
 }
 
-.flex-container span {
-    color: black;
+.button-area span {
+    color: white;
     margin-left: 30px;
+    display:none;
 }
 
-span {
-    /*when the submit button is active*/
-    display: none;
-    margin:30px 20px 20px 30px;
-    
-}
-
-form .flex-container button:active+span {
+form .button-area button:active+span {
     /*when the submit button is active*/
     display: flex;
     top:180px;
     font-size: small;
 }
 
-form .flex-container button:active {
+form .button-area button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
-form .flex-container {
-    margin: 25px 0;
-    display: flex;
-    align-items: center;
-}
-
-.flex-container button {
+.button-area button {
     border-radius: 5px;
     padding: 15px 15px 20px 20px;
     font-size: 16px;
