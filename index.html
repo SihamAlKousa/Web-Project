@@ -32,12 +32,42 @@
     
 
     <div class="img-container">
+            <div class="btnNext" onclick="move_side(1)">Next</div>
+            <div class="btnBack" onclick="move_side(-1)">Back</div>
         <div class="img-slider">
-            <button class="btnNext">Next</button>
-            <button class="btnBack">Back</button>
-            <!--<img src="" alt="Movie poster">-->
+            
+            <img src="/html/Images/theBatman_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="/html/Images/goodDoctor_wide.png" alt="Movie poster" class="sImg">
+            <img src="/html/Images/inception_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="/html/Images/mindhunter_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="/html/Images/theDarkKnight_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="/html/Images/shutterIsland_wide.jpg" alt="Movie poster" class="sImg">
+
         </div>
     </div>
+
+    <script>
+        var index=1;
+        showImg(index);
+        function move_side(e){showImg(index += e);}
+        function showImg(e) {
+            
+            const img = document.querySelectorAll('.img-slider img');
+            if(e > img.length){
+                index = 1;
+            }
+
+            if(e < 1){
+                index = img.length;
+            }
+
+            for(var i=0; i<img.length; i++){
+                img[i].style.display = "none";
+            }
+            
+            img[index-1].style.display = "block";
+        }
+    </script>
     
 
     <section class="block about-us">
@@ -57,50 +87,50 @@
             
 
             <div class="movie-info">
-                <h4>Movie Title</h4>
+                <h4>Greys Anatomy</h4>
                 <div class="img-thumbnail">
-                    <img src="" alt="movie name">
+                    <img src="/html/Images/Greys_Anatomy.jpg" alt="movie name">
                 </div >
                 <div class="add-watchlist"><a href="">+ Watchlist</a></div>
                 
             </div>
 
             <div class="movie-info">
-                <h4>Movie Title</h4>
+                <h4>Brooklyn99</h4>
                 <div class="img-thumbnail">
-                    <img src="" alt="movie name">
+                    <img src="/html/Images/brooklyn99.jpg" alt="movie name">
                 </div>
                 <div class="add-watchlist"><a href="">+ Watchlist</a></div>
             </div>
 
             <div class="movie-info">
-                <h4>Movie Title</h4>
+                <h4>Gladiator</h4>
                 <div class="img-thumbnail">
-                    <img src="" alt="movie name">
+                    <img src="/html/Images/gladiator.png" alt="movie name">
                 </div>
                 <div class="add-watchlist"><a href="">+ Watchlist</a></div>
             </div>
 
             <div class="movie-info">
-                <h4>Movie Title</h4>
+                <h4>Friends</h4>
                 <div class="img-thumbnail">
-                    <img src="" alt="movie name">
+                    <img src="/html/Images/Freinds.jpg" alt="movie name">
                 </div>
                 <div class="add-watchlist"><a href="">+ Watchlist</a></div>
             </div>
 
             <div class="movie-info">
-                <h4>Movie Title</h4>
+                <h4>The Batman</h4>
                 <div class="img-thumbnail">
-                    <img src="" alt="movie name">
+                    <img src="/html/Images/TheBatman.jpg" alt="movie name">
                 </div>
                 <div class="add-watchlist"><a href="">+ Watchlist</a></div>
             </div>
 
             <div class="movie-info">
-                <h4>Movie Title</h4>
+                <h4>Suits</h4>
                 <div class="img-thumbnail">
-                    <img src="" alt="movie name">
+                    <img src="/html/Images/suits.jpg" alt="movie name">
                 </div>
 
                 <div class="add-watchlist"><a href="">+ Watchlist</a></div>
