@@ -1,7 +1,5 @@
-/*project stage number 3
-Alaa laghoub
-U20104610*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,16 +10,17 @@ U20104610*/
     outline: 0;
     border: 0;
     appearance: none;
-    color:#e2e2e2;
+    color: #e2e2e2;
 }
 
 body {
-    background-color:#181726;
-    font-family:"Poppins", sans-serif;
+    background-color: #161622;
     overflow-x: hidden;
     line-height: 1.5rem;
     margin: 0;
+    font-family:"Poppins", sans-serif;
 }
+
 .block {
     margin: 0 auto;
     width: auto;
@@ -32,21 +31,18 @@ body {
     height: 700px;
     margin: 20px auto;
     padding: 20px;
-    margin-top: 90px;
+    margin-top: 130px;
 }
 /* Navigation */
-
-
 nav {
-    background-color:#2b2945c2;
+    background-color: #2b2945c2;
     width: 100%;
     height: 5.5rem;
     position: relative;
     top: 0;
     z-index: 10;
-    box-shadow: 3px 4px 15px 1px #11111b;
-    color:#C5C6C7;
-    
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem #11111b;
+    color: #C5C6C7;
 }
 
 
@@ -56,13 +52,12 @@ nav ul {
     right: 4rem;
     display: flex;
     align-items: center;
-    color:#C5C6C7;
+    color: #C5C6C7;
 }
 
 nav ul li a {
     padding: 3rem;
-    color:#C5C6C7;
-    
+    color: #C5C6C7;
 }
 
 nav ul li a:hover {
@@ -79,11 +74,11 @@ nav ul li a:hover {
     top: 3.25rem;
     right: auto;
     flex-direction: column;
-    background-color: #0B0C10;
+    background-color: #0b0c10;
     visibility: hidden;
     transition: all 250ms ease;
     opacity: 0;
-    background-color:#2b2945c2;
+    background-color: #2b2945c2;
 }
 
 #sub-ul li a {
@@ -104,21 +99,19 @@ nav ul li:hover a + #sub-ul {
     float: left;
     margin-left: 20px;
     margin-right: 50px;
-    color:#C5C6C7;
+    color: #C5C6C7;
 }
 .poster ul li h1{
     margin-right: 600px;
     margin-bottom: 10px;
-    color: #a08bba;
+    
 }
 .poster ul li{
     float: left;
     margin-right: 13.5px;
     margin-left: 13.5px;
     margin-top: 13.5px;
-
 }
-
 figure{
     overflow: hidden;
 }
@@ -154,60 +147,38 @@ figure{
 		left: 125%;
 	}
 }
-img {
+.art {
     border-radius: 2%;
     width: 230px;
     height: 345px;
 }
 
-/*movie title and its description*/
+
+/*tvshow title and its description*/
 .title {
     color: black;
     font-size: 24px;
     margin: 0 0 12px;
     
 }
-.year {
-    margin-left:5px;
-    padding-bottom: 5px;
-}
-.title h1{
-    margin-top:-40px;
-    padding-top:20px;
-    font-size:2rem;
-    font-weight: bold;
-    color:#C5C6C7;
-}
-.summary {
-   
-    box-shadow: 3px 4px 15px 1px #11111b;
+.des {
+    color: #515e6b;
     border-radius: 25px;
     border: 2px solid none;
-    padding: 10px 20px 20px 20px;
-    margin-right:30px;
+    padding: 20px;
+    margin-right: 30px;
     width: 450px;
-    height: 330px;
+    height: 300px;
     display: block;
     float: left;
-    color:#e2e2e2;
-    margin-top:-20px;
+    text-align: center;
+    box-shadow: 3px 4px 9px 4px #11111b;
    
 }
-.summary p{
-    margin:20px;
-}
-.trailer{
-    padding:0;
-    margin:0;
-    margin-top:-20px;
-    
-}
-iframe{
-    border-radius: 5px;
-}
-.description {
+/*tvshow infos*/
+.des2 {
     border-radius: 25px;
-    box-shadow: 3px 4px 10px 4px #11111b;
+    box-shadow: 3px 4px 9px 4px #11111b;
     padding: 20px;
     padding-top: 20px;
     margin-top: 40px;
@@ -216,15 +187,13 @@ iframe{
     height: 360px;
     display: block;
     float: left;
-    font-size:16px;
-   
+    font-size: 16px;
 }
-.description ul li span{
+.des2 ul li span{
     color: #a08bba;
     font-size: 18px;
 }
-.description ul li p{
-    
+.des2 ul li p{
     box-sizing: border-box;
     margin-bottom: 1px;
     margin-right: 1px;
@@ -238,64 +207,29 @@ iframe{
     display: inline-block;
     padding: 3px 6px;
     white-space: nowrap;
-    
 }
-
-.ratings{
+.seasons{
+    box-shadow: 3px 4px 9px 4px #11111b;
+    border-radius: 25px;
     margin: 20px;
     position:relative;
     padding: 20px;
+    margin-left: 0px;
     margin-top: -358px;
     margin-right: 20px;
     width: 100%;
     height: 360px;
-    padding-left:550px;
-    display: block;
-    float: left;
-    font-size:16px;
-}
-.ratings ul li h2{
-    color: #a08bba;
-    font-size:18px;
-}
-.ratings ul li p{
-    box-sizing: border-box;
-    margin-bottom: 1px;
-    margin-right: 1px;
-    max-width: 100%;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    background: #e1d3f3de;
-    border-radius: 3px;
-    box-shadow: inset 0 1px transparent;
-    color: #3a2a5b;
-    display: inline-block;
-    padding: 0px 6px;
-    white-space: nowrap;
-    font-size: 16px;;
-}
-.cast{
-    color:#8ea2b6;
-    margin: 20px;
-    position:relative;
-    padding: 20px;
-    margin-top: -240px;
-    margin-right: 20px;
-    width: 100%;
-    height: 360px;
-    padding-left:550px;
+    padding-left:290px;
     display: block;
     float: left;
     margin-bottom: -200px;
     font-size:16px;
 }
-.cast ul li span{
+.seasons ul li h3 span{
     color: #a08bba;
-    font-size:18px;
-    font-weight: 600;
+    font-size: 18px;
 }
-.cast ul li p{
-    font-weight: lighter;
+.seasons ul li p{
     box-sizing: border-box;
     margin-bottom: 1px;
     margin-right: 1px;
@@ -311,21 +245,100 @@ iframe{
     white-space: nowrap;
     font-size: 16px;;
 }
-/* ----------------------- FOOTER -------------------------------*/
+.cast{
+    color:#a08bba;
+    margin: 20px;
+    position:relative;
+    padding: 20px;
+    margin-top: -210px;
+    margin-right: 20px;
+    width: 100%;
+    height: 360px;
+    padding-left:550px;
+    display: block;
+    float: left;
+    margin-bottom: -200px;
+    font-size:16px;
+}
+.cast ul li h3 span{
+    color: #a08bba;
+    font-size: 18px;
+}
+.cast ul li p{
+    box-sizing: border-box;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: #e1d3f3de;
+    border-radius: 3px;
+    box-shadow: inset 0 1px transparent;
+    color: #3a2a5b;
+    display: inline-block;
+    padding: 0 6px;
+    white-space: nowrap;
+    font-size: 16px;;
+}
+/*ratings*/
+.ratings{
+    margin: 20px;
+    position:relative;
+    padding: 20px;
+    margin-top: -358px;
+    margin-right: 20px;
+    width: 100%;
+    height: 360px;
+    padding-left:550px;
+    display: block;
+    float: left;
+    font-size:16px;
+}
+.ratings ul li h2{
+    color: #a08bba;
+    font-size: 18px;
+}
+.ratings ul li p{
+    box-sizing: border-box;
+    margin-bottom: 1px;
+    margin-right: 1px;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background:#e1d3f3de;
+    border-radius: 3px;
+    box-shadow: inset 0 1px transparent;
+    color:  #3a2a5b;
+    display: inline-block;
+    padding: 0px 6px;
+    white-space: nowrap;
+    font-size: 16px;;
+}
+.ratings ul li h4 span{
+    text-transform: uppercase;
+    color: #a08bba;
+}
+/*trailer*/
+.trailer{
+    padding: 0;
+    margin: 0;
+}
+/*footer*/
 footer {
-    box-shadow: 3px 4px 15px 2px #11111b;
     position: relative;
     display: grid;
     width: 100%;
     left: 0;
     top: 50px;
     justify-content: center;
-    background-color:#2b2945c2;
-
+    background-color: #2b2945c2;
 }
+
+
 .footer-logo {
     margin: 1rem auto;
 }
+
 .footer-media {
     display: flex;
     justify-content: space-evenly;
@@ -356,5 +369,3 @@ footer {
 .fa-brands {
     font-size: 24px;
 }
-
-

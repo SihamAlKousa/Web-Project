@@ -1,3 +1,6 @@
+/*project stage number 3
+Alaa laghoub
+U20104610*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
 *{
     margin:0;
@@ -11,22 +14,25 @@ body{
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #1f2833; /*need to change*/
+    background-color:#181726; /*need to change*/
+    color: #e7ddf4de;
 }
 .container{
+    color: #f2eff7de;
     width: 720px;
-    background:#c0c8d1;
+    background-color:#2b2945c2;
     border-radius:8px;
+    
 }
 .container header{
     font-size:15px;
     
     padding:0 30px 10px 40px;
-    border-bottom:2px solid black;
+    border-bottom:2px solid white;
 }
 .container h3{
     font-size:30px;
-    font-weight: 1000px;
+    font-weight:inherit;
     padding:5px 10px;
    
 }
@@ -38,6 +44,7 @@ form .dbl-field{
     align-items: center;
     justify-content: space-between;
     margin-bottom:20px;
+    
 }
 .dbl-field .field{
     height:50px;
@@ -54,7 +61,9 @@ form .message textarea{
     border:1px solid white;
     border-radius: 10px;;
     font-size:16px;
-    font-size: 17px;;
+    
+    background-color: #e7ddf4de;
+    font-size: 17px;
 }
 /*form .field input::placeholder,
 form .message textarea::placeholder{
@@ -72,12 +81,12 @@ form .message textarea:focus{
     transform: translateY(-50%);
     font-size: 17px;
     pointer-events: none;
-    color:#bfbfbf;
+    color:#2b2945c2;
     
 }
 form .field input:focus ~ i,
 form .message textarea:focus ~ i{
-    color:#3b3b3b;
+    color:#59408b;
     
 }
 form .message{
@@ -97,7 +106,6 @@ form .message textarea{
     max-height: 300px;;
     padding: 15px 20px 0 48px;
 }
-
 
 .flex-container {
     display: flex;
@@ -122,8 +130,7 @@ form .message textarea{
 span {
     /*when the submit button is active*/
     display: none;
-    margin:30px 20px 20px 30px;
-    
+    margin:30px 20px 20px 30px;   
 }
 
 form .flex-container button:active+span {
@@ -150,9 +157,8 @@ form .flex-container {
     font-size: 16px;
     border: none;
     cursor: pointer;
+    background-color: #e7ddf4de;
 }
-
-
 @media(max-width:600px){
     .container header{
         text-align: center;
@@ -176,7 +182,3 @@ form .flex-container {
     }
     
 }
-  
-
-
-
