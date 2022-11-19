@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+
+    <link rel="stylesheet" href="/css/homeStyle.css" type="text/css">
+    <script src="https://kit.fontawesome.com/3ae9fbf168.js" crossorigin="anonymous"></script>
+ 
+</head>
+<body>
+    
+        <nav>
+
+            <div class="nav-logo">
+                <a href="home.html"><img src="" alt="logo"></a>
+            </div>
+            
+            <ul>
+                <li><a href="#">Category</a>
+                    <ul id="sub-ul">
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">TV Shows</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Surprise Me</a></li>
+
+                <li><a href="#">Watchlist</a></li>
+            </ul>
+        </nav>
+    
+
+    <div class="img-container">
+            <div class="btnNext" onclick="move_side(1)">Next</div>
+            <div class="btnBack" onclick="move_side(-1)">Back</div>
+        <div class="img-slider">
+            
+            <img src="/html/Images/theBatman_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="/html/Images/goodDoctor_wide.png" alt="Movie poster" class="sImg">
+            <img src="/html/Images/inception_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="/html/Images/mindhunter_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="/html/Images/theDarkKnight_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="/html/Images/shutterIsland_wide.jpg" alt="Movie poster" class="sImg">
+
+        </div>
+    </div>
+
+    <script>
+        var index=1;
+        showImg(index);
+        function move_side(e){showImg(index += e);}
+        function showImg(e) {
+            
+            const img = document.querySelectorAll('.img-slider img');
+            if(e > img.length){
+                index = 1;
+            }
+
+            if(e < 1){
+                index = img.length;
+            }
+
+            for(var i=0; i<img.length; i++){
+                img[i].style.display = "none";
+            }
+            
+            img[index-1].style.display = "block";
+        }
+    </script>
+    
+
+    <section class="block about-us">
+        <div class="about-us-container">
+           <h1>About Us</h1>
+        <p>Our website is a movie and TV show library for fans or curious visitors to dive in and explore all about their favourite shows.
+            We aim to provide best quality service together with solid content that will satisfy all visitors.
+        </p> 
+        </div>
+        
+    </section>
+
+    <div class="top-movies">
+        <h2>Recommendation</h2>
+
+        <div class="movie-container">
+            
+
+            <div class="movie-info">
+                <h4>Greys Anatomy</h4>
+                <div class="img-thumbnail">
+                    <img src="/html/Images/Greys_Anatomy.jpg" alt="movie name">
+                </div >
+                <div class="add-watchlist"><a href="">+ Watchlist</a></div>
+                
+            </div>
+
+            <div class="movie-info">
+                <h4>Brooklyn99</h4>
+                <div class="img-thumbnail">
+                    <img src="/html/Images/brooklyn99.jpg" alt="movie name">
+                </div>
+                <div class="add-watchlist"><a href="">+ Watchlist</a></div>
+            </div>
+
+            <div class="movie-info">
+                <h4>Gladiator</h4>
+                <div class="img-thumbnail">
+                    <img src="/html/Images/gladiator.png" alt="movie name">
+                </div>
+                <div class="add-watchlist"><a href="">+ Watchlist</a></div>
+            </div>
+
+            <div class="movie-info">
+                <h4>Friends</h4>
+                <div class="img-thumbnail">
+                    <img src="/html/Images/Freinds.jpg" alt="movie name">
+                </div>
+                <div class="add-watchlist"><a href="">+ Watchlist</a></div>
+            </div>
+
+            <div class="movie-info">
+                <h4>The Batman</h4>
+                <div class="img-thumbnail">
+                    <img src="/html/Images/TheBatman.jpg" alt="movie name">
+                </div>
+                <div class="add-watchlist"><a href="">+ Watchlist</a></div>
+            </div>
+
+            <div class="movie-info">
+                <h4>Suits</h4>
+                <div class="img-thumbnail">
+                    <img src="/html/Images/suits.jpg" alt="movie name">
+                </div>
+
+                <div class="add-watchlist"><a href="">+ Watchlist</a></div>
+            </div>
+
+
+        </div>
+    </div>
+
+    
+    <div class="reviews">
+        <h2>Community Reviews</h2>
+
+            <div class="review-container">
+                <div class="review-block">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ornare quam viverra orci sagittis eu.</blockquote>
+                <p class="reviewer">Reviewer name 1</p>
+            </div>
+
+            <div class="review-block">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ornare quam viverra orci sagittis eu.</blockquote>
+                <p class="reviewer">Reviewer name 2</p>
+            </div>
+
+            <div class="review-block">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ornare quam viverra orci sagittis eu.</blockquote>
+                <p class="reviewer">Reviewer name 3</p>
+            </div>
+
+            <div class="review-block">
+                <blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    Ornare quam viverra orci sagittis eu.</blockquote>
+                <p class="reviewer">Reviewer name 4</p>
+            </div>
+
+        </div>
+        
+    </div>
+
+    <footer>
+        <div class="footer-logo">
+            <img src="" alt="website logo">
+        </div>
+        
+        
+        <div class="footer-media">
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <a href=""><i class="fa-brands fa-telegram"> </i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+        </div>
+
+        
+        <div class="footer-links">
+            <h4><a href="#">Contact Us</a></h4>
+        </div>
+        
+        <div class="footer-copyright">
+            <p><span>&copy;</span>Website project 2022. Movie rating website</p>
+        </div>
+        
+    </footer>
+</body>
+</html>
