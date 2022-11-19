@@ -107,36 +107,51 @@ form .message textarea{
     padding: 15px 20px 0 48px;
 }
 
-
-form .button-area {
-    margin:25px 0;
+.flex-container {
     display: flex;
-    align-items: center;
 }
 
-.button-area button:focus {
+.flex-container>div {
+
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+}
+
+.flex-container button:focus {
     border: 2px solid;
 }
 
-.button-area span {
-    color: white;
+.flex-container span {
+    color: black;
     margin-left: 30px;
-    display:none;
 }
 
-form .button-area button:active+span {
+span {
+    /*when the submit button is active*/
+    display: none;
+    margin:30px 20px 20px 30px;   
+}
+
+form .flex-container button:active+span {
     /*when the submit button is active*/
     display: flex;
     top:180px;
     font-size: small;
 }
 
-form .button-area button:active {
+form .flex-container button:active {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
 }
 
-.button-area button {
+form .flex-container {
+    margin: 25px 0;
+    display: flex;
+    align-items: center;
+}
+
+.flex-container button {
     border-radius: 5px;
     padding: 15px 15px 20px 20px;
     font-size: 16px;
@@ -144,8 +159,6 @@ form .button-area button:active {
     cursor: pointer;
     background-color: #e7ddf4de;
 }
-
-
 @media(max-width:600px){
     .container header{
         text-align: center;
@@ -169,7 +182,3 @@ form .button-area button:active {
     }
     
 }
-  
-
-
-
