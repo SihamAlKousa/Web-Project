@@ -1,4 +1,6 @@
-img {
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.imgmine {
   float: left;
   padding: 20px;
   width: 15%;
@@ -8,10 +10,7 @@ img {
 h2 {
   padding-top: 30px;
   font-size: 30px;
-}
-
-body {
-  padding: 20px;
+	color: white;
 }
 
 p {
@@ -22,6 +21,7 @@ p {
 h1 {
   font-size: 50px;
   padding-left: 20px;
+	color: white;
 }
 
 div {
@@ -32,3 +32,129 @@ div {
   border-radius: 25px;
   padding: 20px; 
 }
+
+
+* {
+
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    appearance: 0;
+}
+
+body {
+    background-color: #181726;
+	color: #D9D9D9;
+    font-family:"Poppins", sans-serif;
+    overflow-x: hidden;
+    line-height: 1.5rem;
+	padding: 20px;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+nav {
+    background-color: lightgray;
+    width: 100%;
+    height: 5.5rem;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+}
+
+nav ul {
+    position: absolute;
+    top: 2.25rem;
+    right: 4rem;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li a {
+    padding: 3rem;
+    color: black;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+.nav-logo {
+    position: absolute;
+    top: 2.25rem;
+    left: 6.5rem;
+}
+
+#sub-ul {
+    top: 3.25rem;
+    right: auto;
+    flex-direction: column;
+    background-color: lightgray;
+    visibility: hidden;
+    transition: all 250ms ease;
+    opacity: 0;
+}
+
+#sub-ul li a {
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+nav ul li:hover a + #sub-ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+footer {
+    display: grid;
+    justify-content: center;
+    background-color: lightgray;
+	color: #1A1D26;
+}
+
+.footer-logo {
+    margin: 1rem auto;
+}
+
+.footer-media {
+    display: flexbox;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.footer-media i {
+    padding-inline: 1rem;
+}
+
+.footer-links {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.footer-links ul li {
+    padding: 0.2rem 0;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright {
+    font-size: small;
+}
+
+.fa-brands {
+    font-size: 24px;
+}
+
