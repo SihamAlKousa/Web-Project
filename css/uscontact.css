@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: 0;
+    border: 0;
+    appearance: none;
+    color: #e2e2e2;
+}
+p{
+    padding: 5px;
+}
+body {
+    background-color: #161622;
+    overflow-x: hidden;
+    line-height: 1.5rem;
+    margin: 0;
+    font-family:"Poppins", sans-serif;
+}
+
+.block {
+    margin: 0 auto;
+    width: auto;
+}
+
+.container{
+    max-width: 1140px;
+    height: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    margin-top: 130px;
+}
+/* Navigation */
+nav {
+    background-color: #2b2945c2;
+    width: 100%;
+    height: 5.5rem;
+    position: relative;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem #11111b;
+    color: #C5C6C7;
+}
+
+
+nav ul {
+    position: absolute;
+    top: 2.25rem;
+    right: 4rem;
+    display: flex;
+    align-items: center;
+    color: #C5C6C7;
+}
+
+nav ul li a {
+    padding: 3rem;
+    color: #C5C6C7;
+}
+
+nav ul li a:hover {
+    color: gray;
+}
+
+.nav-logo {
+    position: absolute;
+    top: 2.25rem;
+    left: 6.5rem;
+}
+
+#sub-ul {
+    top: 3.25rem;
+    right: auto;
+    flex-direction: column;
+    background-color: #0b0c10;
+    visibility: hidden;
+    transition: all 250ms ease;
+    opacity: 0;
+    background-color: #2b2945c2;
+}
+
+#sub-ul li a {
+    display: block;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+nav ul li:hover a + #sub-ul {
+    visibility: visible;
+    opacity: 1;
+}
+
+
+/*poster*/
+.poster {
+    text-align: center;
+    float: left;
+    margin-left: 20px;
+    margin-right: 50px;
+    color: #C5C6C7;
+}
+.poster ul li h1{
+    margin-right: 600px;
+    margin-bottom: 10px;
+    color: #a08bba;
+}
+.poster ul li{
+    float: left;
+    margin-right: 13.5px;
+    margin-left: 13.5px;
+    margin-top: 13.5px;
+}
+figure{
+    overflow: hidden;
+}
+.poster figure {
+	position: relative;
+}
+.poster figure::before {
+	position: absolute;
+	top: 0;
+	left: -90%;
+	z-index: 2;
+	display: block;
+	content: '';
+	width: 50%;
+	height: 98%;
+    border-radius: 25%;
+	background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+	-webkit-transform: skewX(-25deg);
+	transform: skewX(-25deg);
+}
+.poster figure:hover::before {
+	-webkit-animation: shine .75s;
+	animation: shine .75s;
+}
+@-webkit-keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+@keyframes shine {
+	100% {
+		left: 125%;
+	}
+}
+.art {
+    border-radius: 2%;
+    width: 230px;
+    height: 345px;
+}
+
+
+
+/*footer*/
+footer {
+    position: relative;
+    display: grid;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    justify-content: center;
+    background-color: #2b2945c2;
+}
+
+
+.footer-logo {
+    margin: 1rem auto;
+}
+
+.footer-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.footer-media i {
+    padding-inline: 1rem;
+}
+
+.footer-links {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.footer-links ul li {
+    padding: 0.2rem 0;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright {
+    font-size: small;
+}
+
+.fa-brands {
+    font-size: 24px;
+}
+.conbody{
+    font-size: 1.307rem;
+    line-height: 1.52;;
+    margin-left: 250px;
+}
+.contacttext{
+    flex: 1 1 auto;
+    padding-left: 50px;
+}
+.title{
+    font-size: 3.076rem;
+    line-height: 1;
+    text-align: left;
+}
+.conbody p{
+    margin-bottom: 0.705em;
+    font-size: inherit;
+}
+.button{
+    appearance: none;
+    background: #e1d3f3de;
+    color: #3a2a5b;
+    border: none;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 transparent;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 1rem;
+    letter-spacing: 1mm;
+    line-height: 12px;
+    margin: 0;
+    padding: 9px 12px 8px;
+    text-transform: uppercase;
+}
