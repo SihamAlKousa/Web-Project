@@ -1,3 +1,6 @@
+/* Abdullah Awadh Ahmed Bamatraf U21107482 */
+
+
 @import url('https://fonts.googleapis.com/css2?family=MonteCarlo&family=Montserrat&family=Poppins:wght@700&family=Roboto:wght@100;300;400;500;700&display=swap');
 *{
     font-family: 'Poppins', sans-serif;
@@ -9,44 +12,27 @@
     scroll-padding-top: 2rem;
     scroll-behavior: smooth;
     color: white;
+     outline: 0;
+    border: 0;
+    appearance: 0;
 }
 
 
 /* ----------------------- NAV -------------------------------*/
 
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-    list-style: none;
-    box-sizing: border-box;
-    outline: 0;
-    border: 0;
-    appearance: 0;
-}
 
-body {
-    background-color: gray;
-    font-family: sans-serif;
-    overflow-x: hidden;
-    line-height: 1.5rem;
-}
 
-img {
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 nav {
-    background-color: lightgray;
+    background-color:#2b2945c2;
     width: 100%;
     height: 5.5rem;
     position: relative;
     top: 0;
     z-index: 10;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+    box-shadow: 3px 4px 15px 1px #11111b;
+    color:#C5C6C7;
+    
 }
 
 
@@ -56,11 +42,13 @@ nav ul {
     right: 4rem;
     display: flex;
     align-items: center;
+    color:#C5C6C7;
 }
 
 nav ul li a {
     padding: 3rem;
-    color: black;
+    color:#C5C6C7;
+    
 }
 
 nav ul li a:hover {
@@ -71,16 +59,19 @@ nav ul li a:hover {
     position: absolute;
     top: 2.25rem;
     left: 6.5rem;
+    
+    
 }
 
 #sub-ul {
     top: 3.25rem;
     right: auto;
     flex-direction: column;
-    background-color: lightgray;
+    background-color: #0B0C10;
     visibility: hidden;
     transition: all 250ms ease;
     opacity: 0;
+    background-color:#2b2945c2;
 }
 
 #sub-ul li a {
@@ -98,9 +89,12 @@ nav ul li:hover a + #sub-ul {
 
 /* ----------------------- NAVEND -------------------------------*/
 
-body{
-
-    background: #1f2833;
+body {
+    background-color:#181726;
+    font-family:"Poppins", sans-serif;
+    overflow-x: hidden;
+    line-height: 1.5rem;
+    margin: 0;
 }
 
 .heading{
@@ -137,4 +131,53 @@ body{
 }
 .box span{
    font-size: 13px; 
+}
+
+
+
+
+footer {
+    box-shadow: 3px 4px 15px 2px #11111b;
+    position: relative;
+    display: grid;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    justify-content: center;
+    background-color:#2b2945c2;
+
+}
+
+.footer-logo {
+    margin: 1rem auto;
+}
+.footer-media {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1rem;
+}
+
+.footer-media i {
+    padding-inline: 1rem;
+}
+
+.footer-links {
+    text-align: center;
+    margin: 2rem auto;
+}
+
+.footer-links ul li {
+    padding: 0.2rem 0;
+}
+
+.footer-copyright {
+    text-align: center;
+}
+
+.footer-copyright {
+    font-size: small;
+}
+
+.fa-brands {
+    font-size: 24px;
 }
