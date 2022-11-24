@@ -6,46 +6,7 @@
 
     <link rel="stylesheet" href="html/css/homeStyle.css" type="text/css">
     <script src="https://kit.fontawesome.com/3ae9fbf168.js" crossorigin="anonymous"></script>
- 
-</head>
-<body>
     
-        <nav>
-
-            <div class="nav-logo">
-                <a href="index.html"><img src="" alt="logo"></a>
-            </div>
-            
-            <ul>
-                <li><a href="#">Category</a>
-                    <ul id="sub-ul">
-                        <li><a href="html/topmovies.html">Movies</a></li>
-                        <li><a href="html/topseries.html">TV Shows</a></li>
-                    </ul>
-                </li>
-                <li><a href="html/fatymasNews.html">News</a></li>
-                <li><a href="html/surpriseme.html">Surprise Me</a></li>
-
-                <li><a href="html/watchlist.html">Watchlist</a></li>
-            </ul>
-        </nav>
-    
-
-    <div class="img-container">
-            <div class="btnNext" onclick="move_side(1)">Next</div>
-            <div class="btnBack" onclick="move_side(-1)">Back</div>
-        <div class="img-slider">
-            
-            <img src="html/Images/theBatman_wide.jpg" alt="Movie poster" class="sImg">
-            <img src="html/Images/goodDoctor_wide.png" alt="Movie poster" class="sImg">
-            <img src="html/Images/inception_wide.jpg" alt="Movie poster" class="sImg">
-            <img src="html/Images/mindhunter_wide.jpg" alt="Movie poster" class="sImg">
-            <img src="html/Images/theDarkKnight_wide.jpg" alt="Movie poster" class="sImg">
-            <img src="html/Images/shutterIsland_wide.jpg" alt="Movie poster" class="sImg">
-
-        </div>
-    </div>
-
     <script>
         var index=1;
         showImg(index);
@@ -67,7 +28,120 @@
             
             img[index-1].style.display = "block";
         }
+
+        // ----------------------------------------------------------------------------------------
+
+        function shiftMode() {
+
+            const icon = document.getElementById("mode");  // ICON Button 
+            var subNav = document.getElementById("sub-ul");   //Nested list
+            
+
+            if(icon.classList.contains('fa-moon')){
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
+                subNav.style.backgroundColor = "#5A5771";  //light sub-nav list
+            } 
+            else {
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
+                subNav.style.backgroundColor = "#26243C";  //dark sub-nav list
+            }
+
+            var bodyel = document.body;   // BODY styling
+            bodyel.classList.toggle("light-body");
+                
+            
+            const aboutel = document.getElementsByClassName("about-us-container"); //About Us Container 
+            aboutel[0].classList.toggle("about-us-container-sun");
+            
+            const headings = document.querySelectorAll("h1, h2"); //Main Headings color
+            for(heading of headings) {
+                if(icon.classList.contains('fa-moon'))
+                    heading.style.color = "white";
+                else
+                    heading.style.color = '#26243C';
+            }
+
+            
+            var recel = document.getElementsByClassName("top-movies");  //Recommendations section background 
+            recel[0].classList.toggle("top-movies-sun");
+
+
+
+            const infoBoxes = document.querySelectorAll(".movie-info");   //Movies blocks
+            for(infoBox of infoBoxes) {
+                if(icon.classList.contains('fa-moon'))
+                    infoBox.style.backgroundColor = "#e6e2fd";
+                else
+                    infoBox.style.backgroundColor = '#26243C';
+            }
+
+            const infoHeadings = document.querySelectorAll(".movie-info h4");   //Movies blocks headings
+            for(infoHeading of infoHeadings) {
+                if(icon.classList.contains('fa-moon'))
+                    infoHeading.style.color = "#161622";
+                else
+                    infoHeading.style.color = "white";
+            }
+
+            const infoBtns = document.querySelectorAll(".add-watchlist");   //Add watchlist buttons
+            for(infoBtn of infoBtns) {
+                infoBtn.classList.toggle("add-watchlist-sun");
+            }
+
+
+            const reviews = document.querySelectorAll(".review-block");   //Reviews blocks
+            for(review of reviews) {
+                review.classList.toggle("review-block-sun");
+            }
+
+        }
+
     </script>
+</head>
+<body>
+    
+        <nav>
+
+            <div class="nav-logo">
+                <a href="index.html"><img src="" alt="logo"></a>
+            </div>
+            
+            <ul>
+                <li><a href="#">Category</a>
+                    <ul id="sub-ul">
+                        <li><a href="html/topmovies.html">Movies</a></li>
+                        <li><a href="html/topseries.html">TV Shows</a></li>
+                    </ul>
+                </li>
+                <li><a href="html/fatymasNews.html">News</a></li>
+                <li><a href="html/surpriseme.html">Surprise Me</a></li>
+
+                <li><a href="html/watchlist.html">Watchlist</a></li>
+            </ul>
+
+            <div class="theme-btn">
+                <button onclick="shiftMode()"><i class="fa-solid fa-moon" id="mode"></i></button> <!--<i class="fa-solid fa-sun"></i>-->
+            </div>
+        </nav>
+    
+
+    <div class="img-container">
+            <div class="btnNext" onclick="move_side(1)">Next</div>
+            <div class="btnBack" onclick="move_side(-1)">Back</div>
+        <div class="img-slider">
+            
+            <img src="html/Images/theBatman_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="html/Images/goodDoctor_wide.png" alt="Movie poster" class="sImg">
+            <img src="html/Images/inception_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="html/Images/mindhunter_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="html/Images/theDarkKnight_wide.jpg" alt="Movie poster" class="sImg">
+            <img src="html/Images/shutterIsland_wide.jpg" alt="Movie poster" class="sImg">
+
+        </div>
+    </div>
+
     
 
     <section class="block about-us">

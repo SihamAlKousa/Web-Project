@@ -7,6 +7,10 @@
     --gray-purple: #e6e2fd;
     --gray: #dddddd;
     --shadow: 3px 4px 15px 1px #11111b;
+
+    /*------------------ light mode colors -------------------------------*/
+    --sun-purple-gray: #edeaff;
+
 }
 
 * {
@@ -26,6 +30,10 @@ body {
     font-family: sans-serif;
     overflow-x: hidden;
     line-height: 1.5rem;
+}
+
+.light-body {
+    background-color: var(--sun-purple-gray);
 }
 
 .block {
@@ -53,7 +61,7 @@ h1, h2, h3 {
   }
    
   ::-webkit-scrollbar-thumb {
-    background: white; 
+    background: var(--ligth-purple); 
   }
   
   ::-webkit-scrollbar-thumb:hover {
@@ -77,7 +85,7 @@ nav {
 nav ul {
     position: absolute;
     top: 2.25rem;
-    right: 4rem;
+    right: 6rem;
     display: flex;
     align-items: center;
 }
@@ -107,6 +115,10 @@ nav ul li a:hover {
     opacity: 0;
 }
 
+.sub-ul-sun {
+    background-color: #5A5771;
+}
+
 #sub-ul li a {
     display: block;
     padding-top: 1.5rem;
@@ -116,6 +128,43 @@ nav ul li a:hover {
 nav ul li:hover a + #sub-ul {
     visibility: visible;
     opacity: 1;
+}
+
+.theme-btn {
+    display: block;
+    position: relative;
+    top: 1.2rem;
+    right: 2.55rem;
+    float: right;
+}
+
+.theme-btn button {
+    background-color: transparent;
+    padding-inline: 10px;
+}
+
+.fa-moon {
+    font-size: 24px;
+    color: white;;
+    padding: 0.8rem 0.4rem;
+    transition: all 250ms ease;
+}
+
+.fa-moon:hover {
+    color: var(--ligth-purple);
+    cursor: pointer;
+}
+
+.fa-sun {
+    font-size: 24px;
+    color: white;;
+    padding: 0.8rem 0.4rem;
+    transition: all 250ms ease;
+}
+
+.fa-sun:hover {
+    color: var(--ligth-purple);
+    cursor: pointer;
 }
 
 /* ----------------------- IMG SLIDER -------------------------------*/
@@ -175,6 +224,11 @@ nav ul li:hover a + #sub-ul {
     border-radius: 10px;
 }
 
+.about-us-container-sun {
+    background-color: var(--sun-purple-gray);
+    color: var(--dard-bg);
+}
+
 .about-us-container h1 {
     color: white;
 }
@@ -192,7 +246,10 @@ nav ul li:hover a + #sub-ul {
     padding: 8rem 0 5rem 0;
     /* box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem var(--shadow-purple); */
     background-color: var(--dard-bg);
-    
+}
+
+.top-movies-sun {
+    background-color: var(--sun-purple-gray);
 }
 
 .top-movies h2 {
@@ -257,7 +314,16 @@ nav ul li:hover a + #sub-ul {
     border-radius: 5px;
 }
 
+.add-watchlist-sun a {
+    background-color: var(--gray);
+    color: var(--dard-bg);
+}
+
 .add-watchlist a:hover {
+    background-color: var(--ligth-purple);
+}
+
+.add-watchlist-sun a:hover {
     background-color: var(--ligth-purple);
 }
 
@@ -287,6 +353,11 @@ nav ul li:hover a + #sub-ul {
     box-shadow: var(--shadow);
     color: var(--dard-bg);
     border-radius: 10px;
+}
+
+.review-block-sun {
+    background-color: var(--dard-bg);
+    color: white;
 }
 
 .reviewer {
