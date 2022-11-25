@@ -65,7 +65,7 @@ h1, h2, h3 {
   }
   
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(238, 238, 238); 
+    background: #a495e0; 
   }
 
 /* ----------------------- NAV -------------------------------*/
@@ -191,6 +191,8 @@ nav ul li:hover a + #sub-ul {
     background-color: var(--ligth-purple);
     text-align: center;
     padding-top: 16%;
+    font-size: 3em;
+    color: var(--dard-bg);
 }
 
 .img-container .btnNext {
