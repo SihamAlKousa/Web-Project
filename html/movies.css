@@ -21,6 +21,12 @@ U20104610*/
 :root{
     --primary-color:#181726;
     --secondary-color:#edeaff;
+    --dard-bg: #161622;
+    --purple: #2b2945c2;
+    --ligth-purple: #8f72ff;
+    --gray-purple: #e6e2fd;
+    --gray: #dddddd;
+    --shadow: 3px 4px 15px 1px #11111b;
 }
 #icon{
     width:30px;
@@ -326,21 +332,20 @@ iframe{
 }
 /* ----------------------- FOOTER -------------------------------*/
 footer {
-    box-shadow: 3px 4px 15px 2px #11111b;
     position: relative;
+    z-index: 5;
+    box-shadow: var(--shadow);
     display: grid;
-    width: 100%;
-    left: 0;
-    top: 50px;
     justify-content: center;
-    background-color:#2b2945c2;
-
+    background-color: var(--purple);
 }
+
 .footer-logo {
     margin: 1rem auto;
 }
+
 .footer-media {
-    display: flex;
+    display: flexbox;
     justify-content: space-evenly;
     margin-bottom: 1rem;
 }
@@ -352,22 +357,31 @@ footer {
 .footer-links {
     text-align: center;
     margin: 2rem auto;
+    
 }
 
-.footer-links ul li {
-    padding: 0.2rem 0;
+.footer-links h4 a {
+    color: var(--gray);
+}
+
+.footer-links h4 a:hover {
+    color: var(--ligth-purple);
 }
 
 .footer-copyright {
     text-align: center;
+    font-size: small;
+    color: var(--gray);
 }
 
-.footer-copyright {
-    font-size: small;
-}
 
 .fa-brands {
     font-size: 24px;
+    color: white;;
+    padding: 0.8rem 0.4rem;
+    transition: all 250ms ease;
 }
 
-
+.fa-brands:hover {
+    color: var(--ligth-purple);
+}
