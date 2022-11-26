@@ -15,18 +15,24 @@ U20104610*
     <link rel="stylesheet" href="css/contactUs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script>
-        function myFunction() {
-            document.getElementById("submit").innerHTML = "Your message has been successfully submitted!";
-        }
 
-        function showAlert() {
+        function showAlertS() {
+            var txt;
+            if (confirm("Are you sure you want to submit your message? ")) {
+
+            } else {
+
+            }
+
+        }
+        function showAlertR() {
             var txt;
             if (confirm("Are you sure you want to reset your message? ")) {
-                
+
             } else {
-               
+
             }
-           
+
         }
 
 
@@ -202,7 +208,6 @@ U20104610*
 
                         <option value="Zambia">
                         <option value="Zimbabwe">
-
                     </datalist>
                     <i class="fas fa-globe"></i>
                 </div>
@@ -214,13 +219,14 @@ U20104610*
             </div>
 
             <div class="flex-container">
-                <div><button id="submit" onclick="myFunction()" type="submit">Submit message<span></span></button>
+                <div><button id="submit" onclick="showAlertS()" type="submit">Submit message<span></span></button>
                 </div>
-                <div><button id="reset" onclick="showAlert()" type="reset">Reset message</button></div>
+                <div><button id="reset" onclick="showAlertR()" type="reset">Reset message</button></div>
             </div>
 
         </form>
     </div>
+    <script src="css/contactus.js"></script>
 </body>
 
 </html>

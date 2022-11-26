@@ -1,4 +1,4 @@
-/*project stage number 3
+/*project stage number 4
 Alaa laghoub
 U20104610*/
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
@@ -207,13 +207,14 @@ img {
     height: 330px;
     display: block;
     float: left;
-    color:#9382a8;
+ 
     margin-top:-20px;
    
 }
 .summary p{
     margin:20px;
-    color: #a08bba;
+    color: #c6b8d6;
+    font-size: 18px;
 }
 .trailer{
     padding:0;
