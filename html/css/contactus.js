@@ -1,3 +1,6 @@
+/*project stage number 4
+Alaa laghoub
+U20104610*/
 const form = document.querySelector("form"),
 statusTxt = form.querySelector(".button-area span");
 
