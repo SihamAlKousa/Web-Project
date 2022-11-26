@@ -15,9 +15,9 @@ U20104610*/
     color:#e2e2e2;
 }
 .dark-theme{
-    --primary-color:#210d96;
+    --primary-color:#edeaff;
     --secondary-color:#181726;
-    --font-c:red;
+    
 }
 :root{
     --primary-color:#181726;
@@ -75,7 +75,7 @@ nav ul {
 
 nav ul li a {
     padding: 3rem;
-    color:var(--primary-color);
+    color:#C5C6C7;
     
 }
 
@@ -183,13 +183,14 @@ img {
 .year {
     margin-left:5px;
     padding-bottom: 5px;
+    color: #9382a8;
 }
 .title h1{
     margin-top:-40px;
     padding-top:20px;
     font-size:2rem;
     font-weight: bold;
-    color:#C5C6C7;
+    color: #9382a8;
 }
 .summary {
    
@@ -202,12 +203,13 @@ img {
     height: 330px;
     display: block;
     float: left;
-    color:#e2e2e2;
+    color:#9382a8;
     margin-top:-20px;
    
 }
 .summary p{
     margin:20px;
+    color: #a08bba;
 }
 .trailer{
     padding:0;
@@ -285,7 +287,10 @@ iframe{
     display: inline-block;
     padding: 0px 6px;
     white-space: nowrap;
-    font-size: 16px;;
+    font-size: 16px;
+}
+.ratings span{
+    color: #a08bba;
 }
 .cast{
     color:#8ea2b6;
