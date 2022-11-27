@@ -37,14 +37,14 @@
             var subNav = document.getElementById("sub-ul");   //Nested list
             
 
-            if(icon.classList.contains('fa-moon')){
-                icon.classList.remove('fa-moon');
-                icon.classList.add('fa-sun');
+            if(icon.classList.contains('fa-sun')){
+                icon.classList.remove('fa-sun');
+                icon.classList.add('fa-moon');
                 subNav.style.backgroundColor = "#5A5771";  //light sub-nav list
             } 
             else {
-                icon.classList.remove('fa-sun');
-                icon.classList.add('fa-moon');
+                icon.classList.remove('fa-moon');
+                icon.classList.add('fa-sun');
                 subNav.style.backgroundColor = "#26243C";  //dark sub-nav list
             }
 
@@ -57,7 +57,7 @@
             
             const headings = document.querySelectorAll("h1, h2"); //Main Headings color
             for(heading of headings) {
-                if(icon.classList.contains('fa-moon'))
+                if(icon.classList.contains('fa-sun'))
                     heading.style.color = "white";
                 else
                     heading.style.color = '#26243C';
@@ -71,7 +71,7 @@
 
             const infoBoxes = document.querySelectorAll(".movie-info");   //Movies blocks
             for(infoBox of infoBoxes) {
-                if(icon.classList.contains('fa-moon'))
+                if(icon.classList.contains('fa-sun'))
                     infoBox.style.backgroundColor = "#e6e2fd";
                 else
                     infoBox.style.backgroundColor = '#26243C';
@@ -79,7 +79,7 @@
 
             const infoHeadings = document.querySelectorAll(".movie-info h4");   //Movies blocks headings
             for(infoHeading of infoHeadings) {
-                if(icon.classList.contains('fa-moon'))
+                if(icon.classList.contains('fa-sun'))
                     infoHeading.style.color = "#161622";
                 else
                     infoHeading.style.color = "white";
@@ -122,7 +122,7 @@
             </ul>
 
             <div class="theme-btn">
-                <button onclick="shiftMode()"><i class="fa-solid fa-moon" id="mode"></i></button> <!--<i class="fa-solid fa-sun"></i>-->
+                <button onclick="shiftMode()"><i class="fa-solid fa-sun" id="mode"></i></button> <!--<i class="fa-solid fa-sun"></i>-->
             </div>
         </nav>
     
