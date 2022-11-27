@@ -11,12 +11,6 @@ padding: 10px;
 position: relative;
 }
 
-position: relative;
-top: 0;
-z-index: 10;
-box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
-}
-
 
 nav ul {
 
@@ -55,6 +49,11 @@ line-height: 1.5rem;
 }
 
 
+.body-light {
+    background-color: #edeaff;
+}
+
+
 nav {
 
 
@@ -85,7 +84,7 @@ position: absolute;
 
 top: 2.25rem;
 
-right: 4rem;
+right: 6rem;
 
 display: flex;
 
@@ -134,7 +133,7 @@ right: auto;
 
 flex-direction: column;
 
-background-color: #2b2945c2;
+background-color: #26243C;
 
 visibility: hidden;
 
@@ -164,6 +163,45 @@ visibility: visible;
 
 opacity: 1;
 
+}
+
+.theme-btn {
+    display: block;
+    position: relative;
+    top: 1.2rem;
+    right: 2.55rem;
+    float: right;
+    
+}
+
+.theme-btn button {
+    background-color: transparent;
+    padding-inline: 10px;
+    border: none;
+}
+
+.fa-moon {
+    font-size: 24px;
+    color: white;;
+    padding: 0.8rem 0.4rem;
+    transition: all 250ms ease;
+}
+
+.fa-moon:hover {
+    color: #8f72ff;
+    cursor: pointer;
+}
+
+.fa-sun {
+    font-size: 24px;
+    color: white;;
+    padding: 0.8rem 0.4rem;
+    transition: all 250ms ease;
+}
+
+.fa-sun:hover {
+    color: #8f72ff;
+    cursor: pointer;
 }
 
 p{
@@ -238,6 +276,10 @@ margin-left: 150px;
 
 
 
+    }
+
+    .wrapper-sun {
+        background-color: #161622;
     }
 
     /* ----------------------- FOOTER -------------------------------*/

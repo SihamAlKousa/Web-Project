@@ -3,6 +3,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/3ae9fbf168.js" crossorigin="anonymous"></script>
+	<script src="javascript/news.js"></script>
     <title>News</title>
 	<link rel="stylesheet" href="css/NewsStyle.css">
 </head>
@@ -10,21 +12,24 @@
     
 	<nav>
 		<div class="nav-logo">
-			<a href="../index.html"><img src="" alt="logo"></a>
+			<a href="../index.html" class="#"><img src="#" alt="Logo" width="20"></a>
 		</div>
-		
 		<ul>
 			<li><a href="#">Category</a>
 				<ul id="sub-ul">
-					<li><a href="#">Movies</a></li>
-					<li><a href="#">TV Shows</a></li>
-				</ul>
-			</li>
-			<li><a href="#">News</a></li>
-			<li><a href="#">Surprise Me</a></li>
-			<li><a href="#">Watchlist</a></li>
+			<li><a href="movies.html">Movies</a></li>
+			<li><a href="TvShows.html">Tv Shows</a></li>
+		</ul></li>
+			<li><a href="news.html">News</a></li>
+			<li><a href="supriseme.html">Suprise me</a></li>
+			<li><a href="watchlist.html">Watchlist</a></li>
 		</ul>
+
+		<div class="theme-btn">
+			<button onclick="shiftMode()"><i class="fa-solid fa-sun" id="mode"></i></button> <!--<i class="fa-solid fa-sun"></i>-->
+		</div>
 	</nav>
+
 	<section class="wrapper">
 		<h1 style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">MOVIE NEWS</h1>
 			<p>The latest movie news on the movies you're most interested in seeing.</p>
@@ -49,7 +54,7 @@
 			document.getElementById("current_date").innerHTML = month + "/" + day + "/" + year;
 			</script>
 		</div>
-			<img src="images/werewolf.jpg.webp" width="800px" height="500px" style="text-align: center ;" height="600px" alt="Werewolf By Night">
+			<img src="Images/werewolf.jpeg" width="800px" height="500px" style="text-align: center ;" height="600px" alt="Werewolf By Night">
 		<p>The official Rotten Tomatoes audience score for Werewolf by Night is the fourth-highest of the entire Marvel 
 			Cinematic Universe. This project is one of the final entries in Marvel's Phase 4, which has run from the 
 			beginning of 2021 through the end of this year. In addition to following various hero's adventures post-Blip,
@@ -58,7 +63,7 @@
 		</p>
 		<hr>
 		<section class="subnews">
-		<img style="float:left; padding-right:20px;" src="images/simp.jpeg" width="300px" >
+		<img style="float:left; padding-right:20px;" src="Images/simp.jpeg" width="300px" >
 		<p class="subnews_des"><h3>The Simpsons Broke Its Own Rules (To Mock The Show’s Decline)</h3>
 			The Simpsons broke the show's own anthology format in
 			season 34, but this risky choice allowed the cartoon
@@ -66,13 +71,13 @@
 		</section>
 		<hr>
 		<section class="subnews">
-		<img style="float:left; padding-right:20px;" src="images/seinfeld.jpeg" width="300px" >
+		<img style="float:left; padding-right:20px;" src="Images/seinfeld.jpeg" width="300px" >
 		<p class="subnews_des" ><h3>Seinfeld: 10 Endings Better Than The Finale, According To Reddit</h3>
 			The Seinfeld series finale isn't a favorite among fans, and Redditors are sharing the ways they would have concluded the sitcom instead.</p>
 		</section>
 		<hr>
 		<section class="subnews">
-		<img style="float:left; padding-right:20px;" src="images/ricky.jpeg" width="300px" >
+		<img style="float:left; padding-right:20px;" src="Images/ricky.jpeg" width="300px" >
 		<p><h3>Rick & Morty Shows How A Kind Sci-fi Alien Earth Takeover Would Be Worse
 		</h3> Rick & Morty season 6 showed that a takeover of Earth by well-intentioned
 			 extraterrestrials could be just as bad as a typical evil-alien invasion.

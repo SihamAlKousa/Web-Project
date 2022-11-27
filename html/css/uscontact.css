@@ -23,6 +23,10 @@ body {
     font-family:"Poppins", sans-serif;
 }
 
+.body-light {
+    background-color: #edeaff;
+}
+
 .block {
     margin: 0 auto;
     width: auto;
@@ -51,7 +55,7 @@ nav {
 nav ul {
     position: absolute;
     top: 2.25rem;
-    right: 4rem;
+    right: 6rem;
     display: flex;
     align-items: center;
     color: #C5C6C7;
@@ -76,11 +80,10 @@ nav ul li a:hover {
     top: 3.25rem;
     right: auto;
     flex-direction: column;
-    background-color: #0b0c10;
+    background-color: #26243C;
     visibility: hidden;
     transition: all 250ms ease;
     opacity: 0;
-    background-color: #2b2945c2;
 }
 
 #sub-ul li a {
@@ -92,6 +95,43 @@ nav ul li a:hover {
 nav ul li:hover a + #sub-ul {
     visibility: visible;
     opacity: 1;
+}
+
+.theme-btn {
+    display: block;
+    position: relative;
+    top: 1.2rem;
+    right: 2.55rem;
+    float: right;
+}
+
+.theme-btn button {
+    background-color: transparent;
+    padding-inline: 10px;
+}
+
+.fa-moon {
+    font-size: 24px;
+    color: white;;
+    padding: 0.8rem 0.4rem;
+    transition: all 250ms ease;
+}
+
+.fa-moon:hover {
+    color: #8f72ff;
+    cursor: pointer;
+}
+
+.fa-sun {
+    font-size: 24px;
+    color: white;;
+    padding: 0.8rem 0.4rem;
+    transition: all 250ms ease;
+}
+
+.fa-sun:hover {
+    color: #8f72ff;
+    cursor: pointer;
 }
 
 
@@ -155,8 +195,6 @@ figure{
     height: 345px;
 }
 
-
-
 /*footer*/
 footer {
     position: relative;
@@ -202,7 +240,15 @@ footer {
 
 .fa-brands {
     font-size: 24px;
+    transition: all 250ms ease;
+    cursor: pointer;
 }
+
+.fa-brands:hover {
+    color: #8f72ff;
+}
+
+
 .conbody{
     font-size: 1.307rem;
     line-height: 1.52;;
@@ -236,4 +282,9 @@ footer {
     margin: 0;
     padding: 9px 12px 8px;
     text-transform: uppercase;
+}
+
+.button-sun {
+    background-color: #3a2a5b;
+    color: #e1d3f3de;
 }
