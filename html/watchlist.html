@@ -6,33 +6,39 @@
     <title>My Watchlist</title>
     <link href = "css/watchlist.css" rel = "stylesheet" type = "text/css">
 	<script src="https://kit.fontawesome.com/3ae9fbf168.js" crossorigin="anonymous"></script>
+    <script src="javascript/watchList.js"></script>
   </head>
 
   <body>
-	  <nav>
-            <div class="nav-logo">
-                <a href="../index.html"><img src="" alt="logo"></a>
-            </div>
 
-            <ul>
-                <li><a href="#">Category</a>
-                    <ul id="sub-ul">
-                        <li><a href="topmovies.html">Movies</a></li>
-                        <li><a href="topseries.html">TV Shows</a></li>
-                    </ul>
-                </li>
-                <li><a href="fatymasNews.html">News</a></li>
-                <li><a href="surpriseme.html">Surprise Me</a></li>
-                <li><a href="watchlist.html">Watchlist</a></li>
-            </ul>
-        </nav>
+    <nav>
+        <div class="nav-logo">
+            <a href="../index.html" class="#"><img src="#" alt="Logo" width="20"></a>
+        </div>
+        <ul>
+            <li><a href="#">Category</a>
+                <ul id="sub-ul">
+            <li><a href="topmovies.html">Movies</a></li>
+            <li><a href="topseries.html">Tv Shows</a></li>
+        </ul></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="surpriseme.html">Suprise me</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+        </ul>
+
+        <div class="theme-btn">
+            <button onclick="shiftMode()"><i class="fa-solid fa-sun" id="mode"></i></button> <!--<i class="fa-solid fa-sun"></i>-->
+        </div>
+    </nav>
+
 	  <br><br>
     <h1>
     My Watchlist
     </h1>
 	  
 	  <hr><br>
-    <div class = "rcorners1">
+      <div class="col">
+        <div class = "rcorners1">
 	<div>
     <a href = "#"> <img class = "imgmine" src = "tvshows/tvshow images/Freinds.jpg"
     alt = "movieposter.png"> </a>
@@ -55,7 +61,7 @@
 
   <div class = "rcorners1">
 	<div>
-    <a href = "#"> <img class = "imgmine" src = "project_imgs/TheDarkKnight.jpeg"
+    <a href = "#"> <img class = "imgmine" src = "project imgs/TheDarkKnight.jpeg"
     alt = "movieposter.png"> </a>
 		</div>
     <h2>
@@ -73,9 +79,10 @@
     <br><br><br><br>
     <hr>
 	  </div>
+
   <div class = "rcorners1">
 	<div>
-    <a href = "#"> <img class = "imgmine" src = "project_imgs/TheGoodDoctor.jpeg"
+    <a href = "#"> <img class = "imgmine" src = "project imgs/TheGoodDoctor.jpeg"
     alt = "movieposter.png"> </a>
 		</div>
 
@@ -92,6 +99,8 @@
 
     <br><br><br><br>
 	  </div>
+      </div>
+    
 	  
 	  <br><br><br><br><hr>
 	  

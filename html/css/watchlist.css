@@ -2,7 +2,7 @@
 
 .imgmine {
   float: left;
-  padding: 20px;
+  padding: 25px;
   width: 15%;
   height: 4%;
 }
@@ -14,7 +14,7 @@ h2 {
 }
 
 p {
-  width: 40%;
+  width: 50%;
   font-size: 15px;
 }
 
@@ -24,9 +24,7 @@ h1 {
 	color: white;
 }
 
-div {
-    width: 90%;
-}
+
 
 .rcorners1 {
   border-radius: 25px;
@@ -55,6 +53,15 @@ body {
 	padding: 20px;
 }
 
+.body-light {
+    background-color: #edeaff;
+}
+
+.col {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
 img {
     display: block;
     width: 100%;
@@ -63,30 +70,33 @@ img {
 }
 
 nav {
-    background-color: lightgray;
+    background-color: #2b2945c2;
     width: 100%;
     height: 5.5rem;
     position: relative;
     top: 0;
     z-index: 10;
-    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem rgba(55, 55, 55, 0.3);
+    box-shadow: 0.1rem 0.1rem 0.5rem 0.5rem #11111b;
+    color: #C5C6C7;
 }
+
 
 nav ul {
     position: absolute;
     top: 2.25rem;
-    right: 4rem;
+    right: 6rem;
     display: flex;
     align-items: center;
+    color: #C5C6C7;
 }
 
 nav ul li a {
     padding: 3rem;
-    color: black;
+    color: #C5C6C7;
 }
 
 nav ul li a:hover {
-    color: gray;
+    color: #8f72ff;
 }
 
 .nav-logo {
@@ -99,7 +109,7 @@ nav ul li a:hover {
     top: 3.25rem;
     right: auto;
     flex-direction: column;
-    background-color: lightgray;
+    background-color: #26243C;
     visibility: hidden;
     transition: all 250ms ease;
     opacity: 0;
@@ -116,19 +126,61 @@ nav ul li:hover a + #sub-ul {
     opacity: 1;
 }
 
-footer {
-    display: grid;
-    justify-content: center;
-    background-color: lightgray;
-	color: #1A1D26;
+.theme-btn {
+    display: block;
+    position: relative;
+    top: 1.2rem;
+    right: 2.55rem;
+    float: right;
 }
+
+.theme-btn button {
+    background-color: transparent;
+    padding-inline: 10px;
+}
+
+.fa-moon {
+    font-size: 24px;
+    color: white;;
+    padding: 0.8rem 0.4rem;
+    transition: all 250ms ease;
+}
+
+.fa-moon:hover {
+    color: #8f72ff;
+    cursor: pointer;
+}
+
+.fa-sun {
+    font-size: 24px;
+    color: white;;
+    padding: 0.8rem 0.4rem;
+    transition: all 250ms ease;
+}
+
+.fa-sun:hover {
+    color: #8f72ff;
+    cursor: pointer;
+}
+
+
+footer {
+    position: relative;
+    display: grid;
+    width: 100%;
+    left: 0;
+    top: 50px;
+    justify-content: center;
+    background-color: #2b2945c2;
+}
+
 
 .footer-logo {
     margin: 1rem auto;
 }
 
 .footer-media {
-    display: flexbox;
+    display: flex;
     justify-content: space-evenly;
     margin-bottom: 1rem;
 }
@@ -146,15 +198,19 @@ footer {
     padding: 0.2rem 0;
 }
 
-.footer-copyright {
+.footer-copyright p{
     text-align: center;
+    font-size: small;
+    width: 100%;
 }
 
-.footer-copyright {
-    font-size: small;
-}
 
 .fa-brands {
     font-size: 24px;
+    transition: all 250ms ease;
+    cursor: pointer;
 }
 
+.fa-brands:hover {
+    color: #8f72ff;
+}
