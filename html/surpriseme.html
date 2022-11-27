@@ -6,27 +6,30 @@
     <title>Surprise Me!</title>
     <link href = "css/surpriseMe.css" rel = "stylesheet" type = "text/css">
 	<script src="https://kit.fontawesome.com/3ae9fbf168.js" crossorigin="anonymous"></script>
+    <script src="javascript/surpriseMe.js"></script>
   </head>
 
   <body>
 	  
-	  	  <nav>
-            <div class="nav-logo">
-                <a href="../index.html"><img class = "imgnot" src="#" alt="logo"></a>
-            </div>
+    <nav>
+        <div class="nav-logo">
+            <a href="../index.html" class="#"><img src="#" alt="Logo" width="20"></a>
+        </div>
+        <ul>
+            <li><a href="#">Category</a>
+                <ul id="sub-ul">
+            <li><a href="movies.html">Movies</a></li>
+            <li><a href="TvShows.html">Tv Shows</a></li>
+        </ul></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="surpriseme.html">Suprise me</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
+        </ul>
 
-            <ul>
-                <li><a href="#">Category</a>
-                    <ul id="sub-ul">
-                        <li><a href="topmovies.html">Movies</a></li>
-                        <li><a href="topseries.html">TV Shows</a></li>
-                    </ul>
-                </li>
-                <li><a href="fatymasNews.html">News</a></li>
-                <li><a href="surpriseme.html">Surprise Me</a></li>
-                <li><a href="watchlist.html">Watchlist</a></li>
-            </ul>
-        </nav>
+        <div class="theme-btn">
+            <button onclick="shiftMode()"><i class="fa-solid fa-sun" id="mode"></i></button> <!--<i class="fa-solid fa-sun"></i>-->
+        </div>
+    </nav>
 	  
 	<br><br><h1>
     Surprise Me!
@@ -38,10 +41,13 @@
 
     <br><br>
 
-    <p>
+    <div class="text">
+       <p>
       Haven't decided on a movie yet? <br>
       Click the "Surprise Me!" button to get a random movie on our website!
-    </p>
+    </p> 
+    </div>
+    
 	  
 	  	  <br><br><br><br><br><br><br><br><br><hr>
 	  
