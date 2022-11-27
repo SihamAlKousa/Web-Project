@@ -1,7 +1,3 @@
-// Project stage 4
-// name
-// id
-
 function shiftMode() {
 
     const icon = document.getElementById("mode");  // ICON Button 
