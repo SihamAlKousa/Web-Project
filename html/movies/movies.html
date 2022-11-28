@@ -191,7 +191,8 @@ U20104610*
         </div>
 
     </footer>
-    <!------Script for dark/light theme-->
+
+    <!-----------------------Script for dark/light theme-------------------->
     <script>
 
         function shiftMode() {
@@ -215,6 +216,7 @@ U20104610*
             var bodyel = document.body;   // BODY styling
             bodyel.classList.toggle("body-light");
 
+            // Loop for for each element of the Array h1,small , summary p 
 
             const txts = document.querySelectorAll("h1, small, .summary p"); //text in p
             for (txt of txts) {
