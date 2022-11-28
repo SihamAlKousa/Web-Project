@@ -2,7 +2,7 @@
 Alaa laghoub
 U20104610*/
 
-///////////////elert window when user resets or submits///////////
+/////////////elert window when user resets or submits///////////
 function showAlertS() {
     if (confirm("Are you sure you want to submit your message? ")) {
 
