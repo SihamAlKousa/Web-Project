@@ -14,48 +14,32 @@ U20104610*
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="css/contactUs.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script>
 
-        function showAlertS() {
-            var txt;
-            if (confirm("Are you sure you want to submit your message? ")) {
-
-            } else {
-
-            }
-
-        }
-        function showAlertR() {
-            var txt;
-            if (confirm("Are you sure you want to reset your message? ")) {
-
-            } else {
-
-            }
-
-        }
-
-
-
-    </script>
+    <!----------------------Javascript when user submits or resets the message ------------------------>
 
 </head>
 
 <body>
 
     <div class="container">
+
         <h3>What's on your beautiful mind?</h3>
         <header>Have a question?Want an answer?or some information?
             <br>
             Please write to us and we will get back to you as soon as we can.
         </header>
+
         <form action="#">
             <div class="dbl-field">
+
+                <!-----------------------Name input------------------------>
                 <div class="field">
                     <input type="text" placeholder="Enter your name">
                     <i class="fas fa-user"></i>
                     <!--Importing icon-->
                 </div>
+
+                 <!-----------------------Name input------------------------>
                 <div class="field">
                     <input type="text" placeholder="Enter your Email">
                     <i class="fas fa-envelope"></i>
@@ -64,11 +48,13 @@ U20104610*
             </div>
 
             <div class="dbl-field">
+                 <!-----------------------Number input------------------------>
                 <div class="field">
                     <input type="text" placeholder="Enter Phone number">
                     <i class="fas fa-phone-alt"></i>
                     <!--Importing icon-->
                 </div>
+                 <!-----------------------Country list------------------------>
                 <div class="field">
                     <input list="countries" id="country" placeholder="Select your country" name="country">
                     <datalist id="countries">
@@ -213,11 +199,13 @@ U20104610*
                 </div>
             </div>
 
+             <!-----------------------Message input------------------------>
             <div class="message">
                 <textarea placeholder="Write your message here "></textarea>
                 <i class="material-icons">message</i>
             </div>
 
+             <!----------------------Submit/reset buttons------------------------>
             <div class="flex-container">
                 <div><button id="submit" onclick="showAlertS()" type="submit">Submit message<span></span></button>
                 </div>
