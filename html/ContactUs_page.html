@@ -29,7 +29,8 @@ U20104610*
             Please write to us and we will get back to you as soon as we can.
         </header>
 
-        <form action="#">
+        <!--Connecting the form to php-->
+        <form action="connect.php" method="POST" >
             <div class="dbl-field">
 
                 <!-----------------------------Name input---------------------------------->
@@ -201,13 +202,14 @@ U20104610*
 
              <!-----------------------Message input-------------------------------------->
             <div class="message">
-                <textarea placeholder="Write your message here " name="msg"></textarea>
+                <input type="text" placeholder="Write your message here " name="msg">
+               
                 <i class="material-icons">message</i>
             </div>
 
              <!----------------------Submit/reset buttons------------------------------->
             <div class="flex-container">
-                <div><button id="submit" onclick="showAlertS()" type="submit">Submit message<span></span></button>
+                <div><button id="submit" onclick="showAlertS()" type="submit" value="post">Submit message<span></span></button>
                 </div>
                 <div><button id="reset" onclick="showAlertR()" type="reset">Reset message</button></div>
             </div>
