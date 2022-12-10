@@ -19,11 +19,14 @@ U20104610*
 
     <nav>
         <div class="nav-logo">
+
             <a href="../index.html" class="#"><img src="#" alt="Logo" width="20"></a>
+
         </div>
         <ul>
             <li><a href="#">Category</a>
                 <ul id="sub-ul">
+
                     <li><a href="topmovies.html">Movies</a></li>
                     <li><a href="topseries.html">Tv Shows</a></li>
                 </ul>
@@ -32,6 +35,7 @@ U20104610*
             <li><a href="surpriseme.html">Suprise me</a></li>
             <li><a href="watchlist.html">Watchlist</a></li>
         </ul>
+
 
         <!---------------------------------------------THEME BOTT0N------------------------------------------------->
 
@@ -141,6 +145,7 @@ U20104610*
                         <h1>Other Movies</h1>
                     </li>
                     <li>
+
                         <figure><a href="inception.html"><img src="../images/Inception.jpg" alt="Inception"></a></figure>
                     </li>
                     <li>
@@ -153,6 +158,7 @@ U20104610*
                     </li>
                     <li>
                         <figure><a href="#"><img src="../images/The_guilty.jpg" alt="The guilty"></a></figure>
+
                     </li>
                 
                 </ul>
@@ -176,7 +182,7 @@ U20104610*
 
 
         <div class="footer-links">
-            <h4><a href="ContactUs_page.html">Contact Us</a></h4>
+            <h4><a href="../Contactus.html">Contact Us</a></h4>
         </div>
 
         <div class="footer-copyright">
@@ -193,11 +199,13 @@ U20104610*
 
 
 
+
             if (icon.classList.contains('fa-sun')) {
                 icon.classList.remove('fa-sun');
                 icon.classList.add('fa-moon');
                 subNav.style.backgroundColor = "#5A5771";  //light sub-nav list
             }
+
             else {
                 icon.classList.remove('fa-moon');
                 icon.classList.add('fa-sun');
@@ -207,6 +215,7 @@ U20104610*
             var bodyel = document.body;   // BODY styling
             bodyel.classList.toggle("body-light");
 
+
             // Loop for for each element of the Array h1,small , summary p 
 
             const txts = document.querySelectorAll("h1, small, .summary p"); //text in p
@@ -214,8 +223,10 @@ U20104610*
                 if (icon.classList.contains('fa-sun'))
                     txt.style.color = "#e2e2e2";
                 else
+
                     txt.style.color = '#161622';
             }
+
 
 
             const heads = document.querySelectorAll("h2, span"); //text in p
@@ -223,8 +234,10 @@ U20104610*
                 if (icon.classList.contains('fa-sun'))
                     head.style.color = "#a08bba";
                 else
+
                     head.style.color = '#161622';
             }
+
 
 
 
@@ -235,14 +248,17 @@ U20104610*
                     box.style.backgroundColor = "#e1d3f3de";
                 }
 
+
                 else {
                     box.style.color = "#e1d3f3de";
                     box.style.backgroundColor = "#3a2a5b";
                 }
 
+
             }
 
         }
+
 
 
     </script>
