@@ -19,30 +19,38 @@ U20104610*
 
     <nav>
         <div class="nav-logo">
-            <a href="../../index.html"><img src="#" alt="logo"></a>
-        </div>
 
+            <a href="../index.html" class="#"><img src="#" alt="Logo" width="20"></a>
+
+        </div>
         <ul>
             <li><a href="#">Category</a>
                 <ul id="sub-ul">
-            <li><a href="../topmovies.html">Movies</a></li>
-            <li><a href="../topseries.html">Tv Shows</a></li>
-        </ul></li>
-            <li><a href="../News.html">News</a></li>
-            <li><a href="../surpriseme.html">Suprise me</a></li>
-            <li><a href="../watchlist.html">Watchlist</a></li>
+
+                    <li><a href="topmovies.html">Movies</a></li>
+                    <li><a href="topseries.html">Tv Shows</a></li>
+                </ul>
+            </li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="surpriseme.html">Suprise me</a></li>
+            <li><a href="watchlist.html">Watchlist</a></li>
         </ul>
 
+
+        <!---------------------------------------------THEME BOTT0N------------------------------------------------->
+
         <div class="theme-btn">
-            <button onclick="shiftMode()"><i class="fa-solid fa-sun" id="mode"></i></button> <!--<i class="fa-solid fa-sun"></i>-->
+            <button onclick="shiftMode()"><i class="fa-solid fa-sun" id="mode"></i></button>
+            <!--<i class="fa-solid fa-sun"></i>-->
         </div>
     </nav>
-
     
 
     <div class="container">
         <aside class="poster">
-            <figure><img src="../Images/inception.jpeg" alt="Inception"></figure>
+
+            <figure><img src="../Images/Inception.jpg" alt="Inception"></figure>
+
         </aside>
 
         <section class="title">
@@ -188,14 +196,16 @@ U20104610*
 
             const icon = document.getElementById("mode");  // ICON Button 
             var subNav = document.getElementById("sub-ul");   //Nested list
-        
 
 
-            if(icon.classList.contains('fa-sun')){
+
+
+            if (icon.classList.contains('fa-sun')) {
                 icon.classList.remove('fa-sun');
                 icon.classList.add('fa-moon');
                 subNav.style.backgroundColor = "#5A5771";  //light sub-nav list
-            } 
+            }
+
             else {
                 icon.classList.remove('fa-moon');
                 icon.classList.add('fa-sun');
@@ -206,46 +216,51 @@ U20104610*
             bodyel.classList.toggle("body-light");
 
 
-        const txts = document.querySelectorAll("h1, small, .summary p"); //text in p
-            for(txt of txts) {
-                if(icon.classList.contains('fa-sun'))
+            // Loop for for each element of the Array h1,small , summary p 
+
+            const txts = document.querySelectorAll("h1, small, .summary p"); //text in p
+            for (txt of txts) {
+                if (icon.classList.contains('fa-sun'))
                     txt.style.color = "#e2e2e2";
-                else 
+                else
+
                     txt.style.color = '#161622';
             }
 
 
-           const heads = document.querySelectorAll("h2, span"); //text in p
-            for(head of heads) {
-                if(icon.classList.contains('fa-sun'))
+
+            const heads = document.querySelectorAll("h2, span"); //text in p
+            for (head of heads) {
+                if (icon.classList.contains('fa-sun'))
                     head.style.color = "#a08bba";
-                else 
+                else
+
                     head.style.color = '#161622';
             }
 
 
-        
-        const boxs = document.querySelectorAll("ul li p"); //text in p
-            for(box of boxs) {
-                if(icon.classList.contains('fa-sun')) {
+
+
+            const boxs = document.querySelectorAll("ul li p"); //text in p
+            for (box of boxs) {
+                if (icon.classList.contains('fa-sun')) {
                     box.style.color = '#3a2a5b';
                     box.style.backgroundColor = "#e1d3f3de";
                 }
-                    
+
+
                 else {
                     box.style.color = "#e1d3f3de";
                     box.style.backgroundColor = "#3a2a5b";
                 }
-                    
-            } 
+
+
+            }
 
         }
-
-        
 
 
 
     </script>
-
 </body>
 </html>
